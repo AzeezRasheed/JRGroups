@@ -11,6 +11,7 @@ module.exports = {
         sen: ["Playfair Display", "serif"],
         Montserrat: ["Montserrat", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
+        Manrope: ["Manrope", "sans-serif"],
       },
     },
   },
