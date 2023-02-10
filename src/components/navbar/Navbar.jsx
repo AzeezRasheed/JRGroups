@@ -14,7 +14,7 @@ function Navbar() {
 
   const showSidebar = () => setNavbar(!navbar);
   return (
-    <header className=" relative top-0 z-30 w-full px-2 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
+    <header className=" relative top-0 z-30 w-full px-4 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full ">
         <a href="/" className="flex pl-8 items-center">
           <img src={Logo} className="  " alt="JRGroups Logo" />
