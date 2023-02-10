@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo 1.png";
+import Logo from "../../assets/CDFW.png";
 import { BiChevronDown } from "react-icons/bi";
-import styled from "styled-components"
+import styled from "styled-components";
 import data from "../../components/data/sidebar";
-import "./navbar.css"
+import { Link } from "react-router-dom";
+import "./navbar.css";
+import { SidebarData } from "./SidebarData";
+import { FiSearch } from "react-icons/fi";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const showSidebar = () => setNavbar(!navbar);
   return (
     <header className=" relative top-0 z-30 w-full px-2 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full ">
@@ -55,22 +60,9 @@ function Navbar() {
 
         {/* absolute top-0 left-0 z-40 w-64 h-screen space-y-6 transform ease-in-out sm:translate-x-0 duration-200 overflow-y-auto bg-slate-100 */}
         {/* ${ navbar ? 'absolute top-0 left-0 z-40 '  : '' } */}
-        <Sidebar
-          className={` lg:relative lg:flex lg:flex-row lg:z-0  fixed  ${
-            navbar
-              ? " nav-menu active h-screen fixed top-0 left-0 z-40 w-full  max-w-[300px]   bg-slate-100 "
-              : " nav-menu "
-          } 
-          
-          `}
-        >
-          
+        <Sidebar className={` lg:relative lg:flex lg:flex-row lg:z-0  fixed  `}>
           <div className=" px-3 py-4 overflow-y-auto">
-            <ul
-              className={` items-center lg:inline-flex  ${
-                navbar ? "block   " : "hidden"
-              }`}
-            >
+            <ul className={` items-center lg:inline-flex  ${"hidden"}`}>
               <li>
                 <a
                   href="/"
@@ -137,26 +129,70 @@ function Navbar() {
             </ul>
           </div>
 
-  
+     <div className="">
+     <div >
+      <form
+            action=""
+            className={` relative items-center m-auto  lg:block   hidden `}
+          >
+            <Input
+              type="text "
+              className={` Input relative peer z-10 bg-transparent w-12 h-12 rounded-full border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}
+            />
 
-          <form action="" className={` relative items-center flex lg:block  ${navbar ? " block" : "hidden"} `}>
-            <Input type="text "  className={` Input relative peer z-10 bg-transparent w-12 h-12 rounded-full border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}/>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-lime-300  stroke-gray-500  peer-focus:stroke-gray-500  "
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
+            <FiSearch className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-lime-300  stroke-gray-500  peer-focus:stroke-gray-500  " />
           </form>
+      </div>
+     </div>
         </Sidebar>
+
+        {/* sidebar opens on click of the button but it does not close on click of the button again */}
+
+        <nav className={navbar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <img src={Logo} className="  " alt="JRGroups Logo" />
+              </Link>
+            </li>
+
+            <form className="max-w-sm px-4">
+              <div className="relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-0 bottom-0 w-6 h-6 my-auto text-gray-400 left-3"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="w-full py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white focus:border-indigo-600"
+                />
+              </div>
+            </form>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+
+        {/* end */}
       </div>
     </header>
   );
@@ -165,9 +201,9 @@ function Navbar() {
 export default Navbar;
 
 const Input = styled.input`
-transition: linear 0.5s;
-`
+  transition: linear 0.5s;
+`;
 
 const Sidebar = styled.div`
-// transition: linear 0.5s;
-`
+  // transition: linear 0.5s;
+`;

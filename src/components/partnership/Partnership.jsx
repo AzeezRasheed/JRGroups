@@ -68,11 +68,11 @@ function Partnership() {
     <div className=" px-4 m-auto max-w-[1200px] ">
       <div className="flex flex-row mx-4  ">
         <div className="w-full md:w-1/2 lg:w-3/6     ">
-          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         </div>
         <div className=" lg:w-[350px] w-1/2 "></div>
         <div className="w-full md:w-1/2 lg:w-3/6 ">
-          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         </div>
       </div>
       <div className="App px-20 m-auto items-center justify-center max-w-[1000px]  ">

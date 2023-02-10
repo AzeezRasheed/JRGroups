@@ -72,7 +72,7 @@ function Hero() {
             <div className="mx-auto  text-center">
               <h1 className="mb-4 text-3xl  font-Montserrat font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
                 <span className=" bg-clip-text font-extrabold text-white ">
-                  JRGroups Inspired
+                  CDFW Inspired
                 </span>{" "}
                 collection
               </h1>
