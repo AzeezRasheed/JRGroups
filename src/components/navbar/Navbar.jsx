@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <header className=" relative top-0 z-30 w-full px-4 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full ">
-        <a href="/" className="flex pl-8 items-center">
+        <a href="/" className="flex lg:pl-10 md:pl-10 pl-4 pb-2 pt-2 items-center">
           <img src={Logo} className="  " alt="JRGroups Logo" />
         </a>
 
@@ -129,27 +129,27 @@ function Navbar() {
             </ul>
           </div>
 
-          <div className="">
-            <div>
-              <form
-                action=""
-                className={` relative items-center m-auto  lg:block   hidden `}
-              >
-                <Input
-                  type="text "
-                  className={` Input relative peer z-10 bg-transparent w-12 h-12 rounded-full border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}
-                />
+     <div className="">
+     <div >
+      <form
+            action=""
+            className={` relative items-center m-auto  lg:block   hidden `}
+          >
+            <Input
+              type="text "
+              className={` Input relative peer z-10 bg-transparent w-12 h-12 rounded-full border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}
+            />
 
-                <FiSearch className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-lime-300  stroke-gray-500  peer-focus:stroke-gray-500  " />
-              </form>
-            </div>
-          </div>
+            <FiSearch className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-lime-300  stroke-gray-500  peer-focus:stroke-gray-500  " />
+          </form>
+      </div>
+     </div>
         </Sidebar>
 
         {/* sidebar opens on click of the button but it does not close on click of the button again */}
 
         <nav className={navbar ? "nav-menu active" : "nav-menu"}>
-          <ul className="nav-menu-items">
+          <ul className="nav-menu-items" >
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
                 <img src={Logo} className="  " alt="JRGroups Logo" />
@@ -181,8 +181,8 @@ function Navbar() {
             </form>
             {SidebarData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
+                <li key={index} className={item.cName} onClick={showSidebar} >
+                  <Link to={item.path} >
                     {item.icon}
                     <span>{item.title}</span>
                   </Link>
