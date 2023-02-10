@@ -48,6 +48,7 @@ function Navbar() {
         </div>
 
         <div className={`lg:inline-flex   ${navbar ? "block   " : "hidden"}`}>
+          
           <ul>
             <li>
               <a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded">
