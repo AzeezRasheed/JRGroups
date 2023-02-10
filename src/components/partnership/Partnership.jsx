@@ -36,7 +36,7 @@ function Partnership() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1800,
+    autoplaySpeed: 8000,
     cssEase: "linear",
     nextArrow: <NextBtn />,
     prevArrow: <PreviousBtn />,

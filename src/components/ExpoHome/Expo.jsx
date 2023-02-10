@@ -42,7 +42,7 @@ function Expo() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1800,
+    autoplaySpeed: 4000,
     cssEase: "linear",
     nextArrow: <NextBtn />,
     prevArrow: <PreviousBtn />,
