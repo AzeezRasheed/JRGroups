@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
+// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+// import { RxDotFilled } from "react-icons/rx";
 import Logo from "../../assets/Group 1000001826.png";
 
 function Hero() {
@@ -57,119 +57,121 @@ function Hero() {
       auto();
     }
     return () => clearInterval(slideInterval);
-  }, [currentIndex]);
-  
+  }, [currentIndex, autoScroll, slideInterval, auto]);
 
-  return(
+  return (
     <section>
-    <div className="max-w-[1400px] h-[780px] w-full m-auto relative group">
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full  bg-center bg-cover duration-500  "
-      >
-        {/* hero section */}
+      <div className="max-w-screen-2xl  w-full m-auto relative group">
+        <div
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          className="w-full  bg-center object-cover bg-cover duration-500  "
+        >
+          {/* hero section */}
 
-        <div className=" px-4 lg:py-36 md:py-36 py-8  ">
-          <div className="mx-auto  text-center">
-            <h1 className="mb-4 text-3xl font-bold font-Montserrat text-white md:text-5xl lg:text-6xl">
-              <span className=" bg-clip-text ">JRGroups Inspired</span> collection
-            </h1>
+          <div className=" px-4 lg:py-36 md:py-36 py-8  ">
+            <div className="mx-auto  text-center">
+              <h1 className="mb-4 text-3xl  font-Montserrat font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
+                <span className=" bg-clip-text font-extrabold text-white ">
+                  JRGroups Inspired
+                </span>{" "}
+                collection
+              </h1>
 
-            <p className="mt-4 font-inter text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint oc velit esse cillum dolore eu
-              fugiat nulla pariatur.
-            </p>
+              <p className="mt-4 font-inter text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint oc velit esse cillum dolore eu
+                fugiat nulla pariatur.
+              </p>
 
-            <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
-              <a
-                className="block w-full rounded bg-[#C5C5C5] px-8 py-4 text-sm font-medium text-[#000000] shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
-                href="/"
-              >
-                Learn More
-              </a>
+              <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
+                <a
+                  className="block w-full rounded bg-[#C5C5C5] px-8 py-4 text-sm font-medium text-[#000000] shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
+                  href="/"
+                >
+                  Learn More
+                </a>
 
-              <div className=" items-center block ">
-                <div className="flex flex-row items-center  gap-2 ">
-                  <img src={Logo} alt="Logo" />
+                <div className=" items-center block ">
+                  <div className="flex flex-row items-center  gap-2 ">
+                    <img src={Logo} alt="Logo" />
 
-                  <a
-                    className="text-sm font-medium text-[#FFFFFF]  hover:text-slate-300 focus:outline-none sm:w-auto"
-                    href="/"
-                  >
-                    Join Membership
-                  </a>
+                    <a
+                      className="text-sm font-medium text-[#FFFFFF]  hover:text-slate-300 focus:outline-none sm:w-auto"
+                      href="/"
+                    >
+                      Join Membership
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className=" items-center m-auto justify-center flex mt-[30px] lg:absolute lg:top-[50%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-32 lg:mb-0 ">
-            <div className="flex flex-row gap-2">
-              <div
-                className={`w-2 h-2 cursor-pointer ${
-                  currentIndex === 0 ? "bg-white" : "bg-[#3F3F3F]"
-                } rounded-full `}
-                onClick={() => {
-                  setCurrentIndex(0);
-                }}
-              ></div>
-              <div
-                className={`w-2 h-2 cursor-pointer ${
-                  currentIndex === 1 ? "bg-white" : "bg-[#3F3F3F]"
-                } rounded-full `}
-                onClick={() => {
-                  setCurrentIndex(1);
-                }}
-              ></div>
-              <div
-                className={`w-2 h-2 cursor-pointer ${
-                  currentIndex === 2 ? "bg-white" : "bg-[#3F3F3F]"
-                } rounded-full `}
-                onClick={() => {
-                  setCurrentIndex(2);
-                }}
-              ></div>
-              <div
-                className={`w-2 h-2 cursor-pointer ${
-                  currentIndex === 3 ? "bg-white" : "bg-[#3F3F3F]"
-                } rounded-full `}
-                onClick={() => {
-                  setCurrentIndex(3);
-                }}
-              ></div>
-              <div
-                className={`w-2 h-2 cursor-pointer ${
-                  currentIndex === 4 ? "bg-white" : "bg-[#3F3F3F]"
-                } rounded-full `}
-                onClick={() => {
-                  setCurrentIndex(4);
-                }}
-              ></div>
+            <div className=" items-center m-auto justify-center flex mt-[30px] lg:absolute lg:top-[70%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-32 lg:mb-0 ">
+              <div className="flex flex-row gap-2">
+                <div
+                  className={`w-2 h-2 cursor-pointer hover:bg-white ${
+                    currentIndex === 0 ? "bg-white" : "bg-[#3F3F3F]"
+                  } rounded-full `}
+                  onClick={() => {
+                    setCurrentIndex(0);
+                  }}
+                ></div>
+                <div
+                  className={`w-2 h-2 cursor-pointer hover:bg-white ${
+                    currentIndex === 1 ? "bg-white" : "bg-[#3F3F3F]"
+                  } rounded-full `}
+                  onClick={() => {
+                    setCurrentIndex(1);
+                  }}
+                ></div>
+                <div
+                  className={`w-2 h-2 cursor-pointer hover:bg-white ${
+                    currentIndex === 2 ? "bg-white" : "bg-[#3F3F3F]"
+                  } rounded-full `}
+                  onClick={() => {
+                    setCurrentIndex(2);
+                  }}
+                ></div>
+                <div
+                  className={`w-2 h-2 cursor-pointer hover:bg-white ${
+                    currentIndex === 3 ? "bg-white" : "bg-[#3F3F3F]"
+                  } rounded-full `}
+                  onClick={() => {
+                    setCurrentIndex(3);
+                  }}
+                ></div>
+                <div
+                  className={`w-2 h-2 cursor-pointer hover:bg-white ${
+                    currentIndex === 4 ? "bg-white" : "bg-[#3F3F3F]"
+                  } rounded-full `}
+                  onClick={() => {
+                    setCurrentIndex(4);
+                  }}
+                ></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      {/* Left Arrow */}
-      {/* <div className="hidden group-hover:block absolute top-[25%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        {/* Left Arrow */}
+        {/* <div className="hidden group-hover:block absolute top-[25%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={30} />
           </div> */}
-      {/* Right Arrow */}
-      {/* <div className="hidden group-hover:block absolute top-[25%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        {/* Right Arrow */}
+        {/* <div className="hidden group-hover:block absolute top-[25%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactRight onClick={nextSlide} size={30} />
           </div> */}
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
-          ></div>
-        ))}
+        <div className="flex top-4 justify-center py-2">
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className="text-2xl cursor-pointer"
+            ></div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
-  )
+  );
 }
 
 export default Hero;
