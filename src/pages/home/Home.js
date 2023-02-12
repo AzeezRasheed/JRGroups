@@ -17,7 +17,6 @@ function Home() {
       <Cdfw />
       <Expo />
       <Subscribe />
-
       <Footer />
     </div>
   );
