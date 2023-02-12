@@ -99,7 +99,7 @@ function Navbar() {
                         <li key={index} className="s-child  min-w-max">
                           <a href={child.path}>
                             <div className="">
-                              <span className="cursor-pointer  text-start  hover:bg-gray-100 text-gray-700   bg-transparent whitespace-nowrap  dropdown-item text-sm py-2 px-4 font-normal  w-full block">
+                              <span className="cursor-pointer hover:text-gray-600  text-start  hover:underline text-gray-700   bg-transparent whitespace-nowrap  dropdown-item text-sm py-2 px-6 font-normal  w-full block">
                                 {child.title}
                               </span>
                             </div>
@@ -112,18 +112,18 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/cdfw"
                   className="px-10 py-2 font-normal text-[18px] leading-[22px] font-inter text-center text-[#1E1E1E] hover:text-gray-600 rounded"
                 >
-                  Concept store
+                  CDFW
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/expo"
                   className="px-10 py-2 font-normal text-[18px] leading-[22px] font-inter text-center text-[#1E1E1E] hover:text-gray-600 rounded"
                 >
-                  Contact Us
+                  EXPO
                 </a>
               </li>
             </ul>
@@ -137,10 +137,10 @@ function Navbar() {
           >
             <Input
               type="text "
-              className={` Input relative peer z-10 bg-transparent w-12 h-12 rounded-full border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}
+              className={` Input relative peer z-10 bg-transparent w-12 h-12 focus:rounded-full focus:border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}
             />
 
-            <FiSearch className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-lime-300  stroke-gray-500  peer-focus:stroke-gray-500  " />
+            <FiSearch className="absolute top-0 bottom-0 inset-y-0 h-8 w-12 my-auto px-3.5 pt-0 items-center   border-r border-transparent peer-focus:border-gray-300  stroke-gray-500  peer-focus:stroke-gray-500  " />
           </form>
       </div>
      </div>

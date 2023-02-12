@@ -3,9 +3,10 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FImage from "../../assets/image 7.png";
-import SImage from "../../assets/image 8.png";
-import THImage from "../../assets/Rectangle 1.png";
+import Expo1 from "../../assets/Expo1.png";
+import Expo2 from "../../assets/Expo2.png";
+import Expo3 from "../../assets/Expo3.png";
+
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 // import "./expo.css";
 import data from "./data";
@@ -15,10 +16,7 @@ const PreviousBtn = (props) => {
   return (
     <div className={className} onClick={onClick}>
       <div className="">
-        <ArrowBackIos
-          size={30}
-          className="text-[#000000]  items-center "
-        />
+        <ArrowBackIos size={30} className="text-[#000000]  items-center " />
       </div>
     </div>
   );
@@ -27,10 +25,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowForwardIos
-        size={30}
-        className="text-[#000000]  items-center "
-      />
+      <ArrowForwardIos size={30} className="text-[#000000]  items-center " />
     </div>
   );
 };
@@ -39,7 +34,7 @@ function Expo() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -50,14 +45,14 @@ function Expo() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -82,10 +77,8 @@ function Expo() {
                   Check Our Expo
                 </h2>
                 <p className="max-w-[318px] w-full text-[11px] leading-[145%] font-normal font-Montserrat text-[#000000] ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullam ing
-                  elit,
+                  We activate showrooms at various places. and bring you closer
+                  to designers from all over the world. Maybe your city is next.
                 </p>
                 <div className="w-[167px]">
                   <div className="text-center items-center">
@@ -100,23 +93,41 @@ function Expo() {
               </div>
             </div>
             {/* Right Side */}
-            <div className="p-4  lg:w-[70%]  ">
+            <div className=" pr-2 pl-2 lg:pl-0  lg:w-[70%]  ">
               <Slider {...settings}>
                 <div>
                   <div className="flex flex-col  gap-6  ">
                     <img
-                      src={FImage}
+                      src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
+                      className="w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
+                        CDFW IN LONDON
                       </h2>
                       <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
+                        See our showrooms and designers from the heart of
+                        Europe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex flex-col  gap-6  ">
+                    <img
+                      src={Expo2}
+                      alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
+                      className="w-full"
+                    />
+                    <div className="flex flex-col mt-4 gap-4">
+                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                        CDFW IN LAGOS
+                      </h2>
+                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                        See which designers showcased in Africa’s hub for
+                        creativity.
                       </p>
                     </div>
                   </div>
@@ -124,94 +135,72 @@ function Expo() {
                 <div>
                   <div className="flex flex-col  gap-6  ">
                     <img
-                      src={SImage}
+                      src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
+                      className="w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
+                        CDFW IN LOS ANGELES
                       </h2>
                       <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
+                        Fashion meets the digital world in sunny California.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div>
                   <div className="flex flex-col  gap-6  ">
                     <img
-                      src={THImage}
+                      src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
+                      className="w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
+                        CDFW IN LONDON
                       </h2>
                       <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
+                        See our showrooms and designers from the heart of
+                        Europe.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div>
                   <div className="flex flex-col  gap-6  ">
                     <img
-                      src={FImage}
+                      src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
+                      className="w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
+                        CDFW IN LAGOS
                       </h2>
                       <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
+                        See which designers showcased in Africa’s hub for
+                        creativity.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div>
                   <div className="flex flex-col  gap-6  ">
                     <img
-                      src={SImage}
+                      src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
                       className=""
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
+                        CDFW IN LOS ANGELES
                       </h2>
                       <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex flex-col  gap-6  ">
-                    <img
-                      src={THImage}
-                      alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
-                    />
-                    <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-                        CDFW LONDON FASHION WEEK FEBRUARY 2023
-                      </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-                        lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor inci adipiscing elit, sed do
-                        eiusmod tempor inci.
+                        Fashion meets the digital world in sunny California.
                       </p>
                     </div>
                   </div>

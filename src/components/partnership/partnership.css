@@ -27,10 +27,33 @@
   }
 
   .slick-prev {
-   margin-left: -10px;
+   /* margin-left: -10px; */
     
     }
 
+    @media screen and ( width:425px) {
+      .slick-prev {
+        margin-left: 0px;
+         
+         }
+     
+      
+    }
+
+    @media screen and ( width:768px) {
+      .slick-prev {
+        margin-left: 0px;
+         
+         }
+    }
+
+
+    @media screen and ( width:1440px) {
+      .slick-prev {
+        margin-left: -10px;
+         
+         }
+    }
     .slick-next {
         margin-left: 40px;
          
