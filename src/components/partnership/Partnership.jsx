@@ -65,14 +65,14 @@ function Partnership() {
     ],
   };
   return (
-    <div className=" px-4 m-auto max-w-[1200px] ">
+    <div className=" px-4 m-auto max-w-[1200px] mt-6 ">
       <div className="flex flex-row mx-4  ">
         <div className="w-full md:w-1/2 lg:w-3/6     ">
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-[2px] my-8 bg-[#000000]" />
         </div>
         <div className=" lg:w-[350px] w-1/2 "></div>
         <div className="w-full md:w-1/2 lg:w-3/6 ">
-          <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className="h-[2px] my-8 bg-[#000000]" />
         </div>
       </div>
       <div className="App px-20 m-auto items-center justify-center max-w-[1000px]  ">
@@ -80,14 +80,14 @@ function Partnership() {
           <div className="card">
             <img
               src={SecondLogo}
-              alt="image"
+              alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
           <div className="card">
             <img
               src={ThirdLogo}
-              alt="image"
+              alt="image2"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
@@ -95,28 +95,28 @@ function Partnership() {
           <div className="card">
             <img
               src={FirstLogo}
-              alt="image"
+              alt="image3"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
           <div className="card">
             <img
               src={SecondLogo}
-              alt="image"
+              alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
           <div className="card">
             <img
               src={ThirdLogo}
-              alt="image"
+              alt="image2"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
           <div className="card">
             <img
               src={FirstLogo}
-              alt="image"
+              alt="image3"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>

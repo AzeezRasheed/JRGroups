@@ -15,9 +15,9 @@ function Home() {
       <Hero />
       <Partnership />
       <Cdfw />
-      {/* <Global /> */}
-      <Expo/>
-      <Subscribe/>
+      <Expo />
+      <Subscribe />
+
       <Footer />
     </div>
   );
