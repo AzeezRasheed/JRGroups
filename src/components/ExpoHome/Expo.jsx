@@ -8,7 +8,7 @@ import Expo2 from "../../assets/Expo2.png";
 import Expo3 from "../../assets/Expo3.png";
 
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
-// import "./expo.css";
+
 import data from "./data";
 const PreviousBtn = (props) => {
   // console.log(props);

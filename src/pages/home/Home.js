@@ -11,6 +11,7 @@ import Subscribe from "../../components/subscribe-to-news-letter/Subscribe";
 function Home() {
   return (
     <div>
+      
       <Navbar />
       <Hero />
       <Partnership />
