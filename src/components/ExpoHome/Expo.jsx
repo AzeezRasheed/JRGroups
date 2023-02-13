@@ -100,7 +100,7 @@ function Expo() {
                     <img
                       src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full"
+                      className="w-full h-[367px] "
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
@@ -119,7 +119,7 @@ function Expo() {
                     <img
                       src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full"
+                      className="w-full   h-[367px]"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
@@ -137,7 +137,7 @@ function Expo() {
                     <img
                       src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full"
+                      className="w-full  h-[367px]"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
@@ -155,7 +155,7 @@ function Expo() {
                     <img
                       src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full"
+                      className="w-full  h-[367px]"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
@@ -174,7 +174,7 @@ function Expo() {
                     <img
                       src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full"
+                      className="w-full  h-[367px]"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
@@ -193,7 +193,7 @@ function Expo() {
                     <img
                       src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className=""
+                      className="  h-[367px] w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">

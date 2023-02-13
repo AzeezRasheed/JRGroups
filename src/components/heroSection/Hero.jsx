@@ -31,8 +31,9 @@ function Hero() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
+        slidesPerView={1}
         autoplay={{
-          delay: 4000,
+          delay: 9000,
           disableOnInteraction: false,
         }}
         pagination={{

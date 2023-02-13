@@ -7,7 +7,7 @@ function Subscribe() {
         <div className=" bg-[#EFF9FF]  h-full  w-full rounded ">
           <div className="flex flex-col gap-4 text-center items-center mx-auto p-8 ">
             <h2 className=" text-[#000000]  font-extrabold font-Manrope text-[34px] leading-[45px]  ">
-              #Subscribes Our Newsletter
+              #Subscribe To Our Newsletter
             </h2>
             <p className=" text-[#3F3F3F] text-center font-Manrope leading-[30px] text-[16px] font-normal max-w-[592px] ">
               Protect yourself by not giving your persinal data to anyone . Want
