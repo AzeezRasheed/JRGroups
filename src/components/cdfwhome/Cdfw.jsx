@@ -10,7 +10,7 @@ function Cdfw() {
         {typedText}
       </h2>
 
-      <div className="mx-auto items-center justify-center flex">
+      <div className="mx-auto items-center justify-center max-w-[1440px] flex">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-3">
           {data.map((item, index) => (
             <div className="flex flex-col  gap-6 mt-24 pl-6 pr-6 lg:pl-10 lg:pr-10 ">

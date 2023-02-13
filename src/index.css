@@ -7,17 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
 
-
 @layer components {
-
   .blinking-cursor:after {
     content: '|';
-    /* animation: blink 1s linear infinite; */
-    animation: blink 1s  step-start infinite;
-    
+    /* animation:  1s linear infinite; */
+    animation: blink 1s step-start infinite;
   }
 
-  @keyframes blink{
+  @keyframes blink {
     50% {
       opacity: 0;
     }

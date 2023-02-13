@@ -4,7 +4,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
 function Footer() {
   return (
-    <footer className="p-10 bg-white sm:p-14 sm:pl-20">
+    <footer className="p-10 bg-white sm:p-14 sm:pl-20  ">
       <div className="flex flex-col gap-6">
         <div className="flex  justify-between m-auto gap-8 lg:gap-14 lg:flex-row  flex-col   ">
           <div>
@@ -168,7 +168,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="sm:flex sm:items-center sm:justify-between ">
+        <div className="sm:flex sm:items-center sm:justify-between       ">
           <div className="hidden lg:block"></div>
           <span  className="mb-6 text-sm font-bold font-Montserrat text-gray-900 uppercase">
             © 2023{" "}
