@@ -4,9 +4,9 @@ import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
 function Footer() {
   return (
-    <footer className="p-10 bg-white sm:p-14 sm:pl-20  ">
+    <footer className="p-10 bg-white sm:p-10 sm:pt-14 sm:pl-0 ">
       <div className="flex flex-col gap-6">
-        <div className="flex  justify-between m-auto gap-8 lg:gap-14 lg:flex-row  flex-col   ">
+        <div className="flex  justify-between m-auto gap-8 lg:gap-20 lg:flex-row  flex-col   ">
           <div>
             <div>
               <div className=" grid grid-cols-2 sm:grid-cols-3  gap-8 md:gap-20 lg:gap-36 ">
@@ -145,7 +145,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="lg:w-[380px] md:w-[380px] mb-8 ">
+          <div className="lg:w-[380px] md:w-[380px] mb-8 ml-10 ">
             <div className="flex flex-col gap-2 ">
               <h2 className="text-sm font-bold ml-10 font-Montserrat text-gray-900 uppercase ">
                 KEEP IN TOUCH
