@@ -25,11 +25,11 @@
   .card-bottom {
     margin: 10px 20px;
   }
-
+/* 
   .slick-prev {
-   /* margin-left: -10px; */
+   margin-left: -10px;
     
-    }
+    } */
 
     @media screen and ( width:425px) {
       .slick-prev {
