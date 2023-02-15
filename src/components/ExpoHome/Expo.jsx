@@ -7,9 +7,6 @@ import Expo1 from "../../assets/Expo1.png";
 import Expo2 from "../../assets/Expo2.png";
 import Expo3 from "../../assets/Expo3.png";
 
-import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
-
-import data from "./data";
 const PreviousBtn = (props) => {
   // console.log(props);
   const { className, onClick } = props;
@@ -66,7 +63,7 @@ function Expo() {
     ],
   };
   return (
-    <section className="flex flex-col lg:p-10 md:p-10 p-2  justify-center m-auto mt-8 max-w-[1298px] ">
+    <section className="flex flex-col lg:p-10 md:p-10 p-2  justify-center m-auto mt-1 pt-0 max-w-[1298px]  ">
       <div className=" items-center justify-center w-full  m-auto  ">
         <div className=" bg-[#EFF9FF]  h-full  w-full ">
           <div className="lg:p-10 p-4  flex flex-col md:flex-col lg:flex-row gap-10">
@@ -74,7 +71,7 @@ function Expo() {
             <div className="mt-10">
               <div className="flex flex-col gap-4 lg:w-[318px] ">
                 <h2 className="text-[#3F3F3F] leading-[44px] font-semibold text-[36px] font-inter ">
-                  Check Our Expo
+                  Where we’ve been so far
                 </h2>
                 <p className="max-w-[318px] w-full text-[11px] leading-[145%] font-normal font-Montserrat text-[#000000] ">
                   We activate showrooms at various places. and bring you closer
@@ -83,10 +80,10 @@ function Expo() {
                 <div className="w-[167px]">
                   <div className="text-center items-center">
                     <a
-                      className="block w-full rounded bg-[#C5C5C5] text-white px-8 py-4 text-sm font-medium  shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
+                      className="block w-full rounded bg-[#1E1E1E] px-8 py-4 text-sm font-medium text-white shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
                       href="/"
                     >
-                      Learn More
+                      Discover now
                     </a>
                   </div>
                 </div>
@@ -215,19 +212,3 @@ function Expo() {
 }
 
 export default Expo;
-
-// {data.map((item, index) => (
-//     <div>
-//       <div className="flex flex-col  gap-6  ">
-//       <img src={item.image} alt={item.alt} className="w-full" />
-//       <div className="flex flex-col mt-4 gap-4">
-//         <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
-//           {item.title}
-//         </h2>
-//         <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
-//           {item.paragraph}
-//         </p>
-//       </div>
-//     </div>
-//     </div>
-//   ))}

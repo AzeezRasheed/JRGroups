@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../assets/CDFW.png";
 import { BiChevronDown } from "react-icons/bi";
 import styled from "styled-components";
-import data from "../../components/data/sidebar";
+import data from "./data/sidebar";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { SidebarData } from "./SidebarData";
@@ -61,8 +61,6 @@ function Navbar() {
           <span className="sr-only">Open Menu</span>
         </button>
 
-        {/* absolute top-0 left-0 z-40 w-64 h-screen space-y-6 transform ease-in-out sm:translate-x-0 duration-200 overflow-y-auto bg-slate-100 */}
-        {/* ${ navbar ? 'absolute top-0 left-0 z-40 '  : '' } */}
         <Sidebar className={` lg:relative lg:flex lg:flex-row lg:z-0  fixed  `}>
           <div className=" px-3 py-4 overflow-y-auto">
             <ul className={` items-center lg:inline-flex  ${"hidden"}`}>
@@ -132,7 +130,9 @@ function Navbar() {
             </ul>
           </div>
 
-          <form className={` relative items-center m-auto  lg:block w-[300px]  mr-4  hidden `}>
+          <form
+            className={` relative items-center m-auto  lg:block w-[300px]  mr-4  hidden `}
+          >
             <Input
               type="text "
               className={` Input relative peer z-10 bg-transparent w-12 h-12 focus:rounded-full focus:border focus:w-full  transition  focus:border-lime-400 focus:cursor-text pl-12 focus:pr-4 focus:pl-1g   `}

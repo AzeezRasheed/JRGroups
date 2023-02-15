@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -8,7 +7,7 @@ export const TypedText = () => {
 
   // Time intervals for typing and deleting
   const Deleting_Interval = 50;
-  const Typing_Interval = 100;
+  const Typing_Interval = 50;
   const Pause_Sleep_Time = 8000;
 
   const [typedText, setTypedText] = useState("");

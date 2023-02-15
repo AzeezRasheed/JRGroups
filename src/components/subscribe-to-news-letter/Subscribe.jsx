@@ -7,14 +7,13 @@ function Subscribe() {
         <div className=" bg-[#EFF9FF]  h-full  w-full rounded ">
           <div className="flex flex-col gap-4 text-center items-center mx-auto p-8 ">
             <h2 className=" text-[#000000]  font-extrabold font-Manrope text-[34px] leading-[45px]  ">
-              #Subscribe To Our Newsletter
+              #Stay in the loop
             </h2>
             <p className=" text-[#3F3F3F] text-center font-Manrope leading-[30px] text-[16px] font-normal max-w-[592px] ">
-              Protect yourself by not giving your persinal data to anyone . Want
-              to experience more bankng conevenince? Lets keep your personal
-              data safe with us.
+              Want to know where our next fashion week will be? Subscribe to our
+              updates and we’ll keep you up to date.
             </p>
-            <div className="bg-[#B9C9D2]  rounded-[5px] w-full max-w-[492px] h-[41px] "></div>
+            <div className="bg-[#C9E7FA]  rounded-[5px] w-full max-w-[492px] h-[41px] "></div>
             <div className="flex flex-col lg:flex-row md:flex-row gap-6 pt-3">
               <div className="">
                 <div className="text-center items-center">
@@ -30,7 +29,7 @@ function Subscribe() {
               <button className="flex flex-row gap-4 items-center  ">
                 <ImPlay2 size={30} className="cursor-pointer" />
                 <h2 className=" text-[#000000] text-center leading-[30px] text-[16px] font-Manrope font-semibold ">
-                  JRGroup’s Introduction
+                  CDFW’s Introduction
                 </h2>
               </button>
             </div>
