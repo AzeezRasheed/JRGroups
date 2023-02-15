@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 import FirstImage from "../../assets/FirstHeroCarousel.png";
 import SecondImage from "../../assets/SecondHeroCarousel.png";
 import ThirdImage from "../../assets/ThirdHeroCarousel.png";
