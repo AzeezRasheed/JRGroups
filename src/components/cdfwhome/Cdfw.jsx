@@ -2,8 +2,13 @@ import React from "react";
 import data from "./cdfwData";
 import { TypedText } from "../typedText/TypedText";
 
+// What we want to do at this point is to create a function for typing text and then call it in the return statement
+
 function Cdfw() {
+  // So we create a function that returns the text we want to type and then call it and save it in a variable
   const typedText = TypedText();
+
+  //Then we have a cdfw component that returns the data for all we need to display on the page and then we call the typedText variable in the return statement
   return (
     <div className="mt-10 p-4 m-auto">
       <div className="h-[60px]  lg:h-[48px] md:h-[48px] ">

@@ -1,4 +1,5 @@
 import React from "react";
+// The library is react-slick
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,9 +8,9 @@ import FirstLogo from "../../assets/image_3-removebg-preview.png";
 import SecondLogo from "../../assets/image_4-removebg-preview.png";
 import ThirdLogo from "../../assets/image_5-removebg-preview.png";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
-// import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
+
+// The function for the previous button
 const PreviousBtn = (props) => {
-  // console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -19,6 +20,8 @@ const PreviousBtn = (props) => {
     </div>
   );
 };
+
+// The function for the next button
 const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
@@ -29,7 +32,9 @@ const NextBtn = (props) => {
     </div>
   );
 };
+
 function Partnership() {
+  // The settings for the carousel
   const settings = {
     dots: false,
     infinite: true,

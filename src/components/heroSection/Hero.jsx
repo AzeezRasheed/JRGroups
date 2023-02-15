@@ -1,23 +1,20 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import Logo from "../../assets/Group 1000001826.png";
+import React from "react";
 
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-import "./hero.css";
-
+//For Carousel, The library is react-slick
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+//The images are imported from assets folder
 import FirstImage from "../../assets/FirstHeroCarousel.png";
 import SecondImage from "../../assets/SecondHeroCarousel.png";
 import ThirdImage from "../../assets/ThirdHeroCarousel.png";
 import FourthImage from "../../assets/FourthHeroCarousel.png";
 
-import React from "react";
+import "./hero.css";
+
 function Hero() {
+  //The settings for the carousel
   const settings = {
     dots: true,
     dotClass: "slick-dots slick-thumb ",
@@ -29,6 +26,8 @@ function Hero() {
     cssEase: "linear",
     pauseOnHover: false,
   };
+
+  //The images are stored in an array
   const slides = [
     {
       url: FirstImage,
@@ -52,7 +51,7 @@ function Hero() {
             style={{ backgroundImage: `url(${slides[0].url})` }}
             className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl pt-36 lg:pt-0 md:pt-32 lg:flex lg:h-screen lg:items-center"
           >
-            {/* hero section */}
+            {/* first hero  */}
 
             <div class="mx-auto  text-center z-10">
               <h1 className="mb-4 text-3xl  font-Montserrat capitalize font-extrabold md:text-5xl lg:text-6xl">
@@ -114,7 +113,7 @@ function Hero() {
             style={{ backgroundImage: `url(${slides[2].url})` }}
             className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
           >
-            {/* hero section */}
+            {/* second hero  */}
 
             <div class="mx-auto  text-center z-10">
               <h1 className="mb-4 text-3xl  font-Montserrat font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
@@ -147,7 +146,7 @@ function Hero() {
               style={{ backgroundImage: `url(${slides[3].url})` }}
               className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 flex lg:h-screen lg:items-center"
             >
-              {/* hero section */}
+              {/* third hero  */}
 
               <div
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}

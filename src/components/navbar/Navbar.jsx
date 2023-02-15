@@ -12,7 +12,9 @@ function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(false);
 
+  // This is the code that I want to use to make the navbar responsive
   const showSidebar = () => setNavbar(!navbar);
+
   return (
     <header className=" relative top-0 z-30 w-full px-4 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full max-w-[1440px] ">
@@ -61,6 +63,7 @@ function Navbar() {
           <span className="sr-only">Open Menu</span>
         </button>
 
+        {/* This is to open Sidebar  */}
         <Sidebar className={` lg:relative lg:flex lg:flex-row lg:z-0  fixed  `}>
           <div className=" px-3 py-4 overflow-y-auto">
             <ul className={` items-center lg:inline-flex  ${"hidden"}`}>
