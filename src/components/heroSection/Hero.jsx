@@ -11,14 +11,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 import FirstImage from "../../assets/FirstHeroCarousel.png";
 import SecondImage from "../../assets/SecondHeroCarousel.png";
 import ThirdImage from "../../assets/ThirdHeroCarousel.png";
 import FourthImage from "../../assets/FourthHeroCarousel.png";
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
 import React from "react";
 function Hero() {
   const settings = {
@@ -145,17 +142,10 @@ function Hero() {
         </div>
 
         <div className="max-w-screen-2xl  w-full m-auto relative group">
-          <div
-            style={{ backgroundImage: `url(${slides[3].url})` }}
-            className=" relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
-          >
-            {/* hero section */}
-
-        <SwiperSlide>
           <div className="max-w-screen-2xl  w-full m-auto relative group ">
             <div
               style={{ backgroundImage: `url(${slides[3].url})` }}
-              className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
+              className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 flex lg:h-screen lg:items-center"
             >
               {/* hero section */}
 
@@ -171,12 +161,12 @@ function Hero() {
                   Fashion
                 </h1>
 
-                <p className="mt-4 font-inter text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
+                <p className="mt-4 font-inter px-1 text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
                   Be it for a video call, livestream or your social media feed:
                   Get designers piece to wear online.
                 </p>
-                <div className=" items-center block ">
-                  <div className="mt-8 flex m-auto justify-center items-center gap-4">
+                <div className=" items-center block  ">
+                  <div className="mt-8 flex m-auto justify-center w-[183px] items-center gap-4">
                     <a
                       className="block w-full rounded bg-[#1E1E1E] px-8 py-4 text-sm font-medium text-white shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
                       href="/"
@@ -190,7 +180,6 @@ function Hero() {
           </div>
         </div>
       </Slider>
-      </div>
     </div>
   );
 }

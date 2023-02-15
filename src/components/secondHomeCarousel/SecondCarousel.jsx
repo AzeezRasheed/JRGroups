@@ -54,7 +54,7 @@ function SecondCarousel() {
           {" "}
           <img src={slides[currentIndex].url} alt="" />
         </div>
-        <div className=" items-center m-auto justify-center flex p-4 lg:absolute lg:top-[85%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-32 lg:mb-0 ">
+        <div className=" absolute top-[70%] left-[80%] right-[20%] items-center m-auto justify-center flex p-4 lg:absolute lg:top-[85%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-32 lg:mb-0 ">
           <div className="flex flex-row gap-2">
             <button
               className="cursor-pointer"
@@ -64,7 +64,9 @@ function SecondCarousel() {
             >
               <BsArrowLeftCircle
                 size={30}
-                className={` text-black ${currentIndex === 0 ? "lg:text-black" : "lg:text-white"}`}
+                className={`  ${
+                  currentIndex === 0 ? "text-black" : "text-white"
+                }`}
               />
             </button>
 
@@ -76,7 +78,9 @@ function SecondCarousel() {
             >
               <BsArrowRightCircle
                 size={30}
-                className={`text-black ${currentIndex === 0 ? "lg:text-black" : "lg:text-white"}`}
+                className={` ${
+                  currentIndex === 0 ? "text-black" : "text-white"
+                }`}
               />
             </button>
           </div>
