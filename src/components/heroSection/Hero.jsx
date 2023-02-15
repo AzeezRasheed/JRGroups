@@ -50,7 +50,7 @@ function Hero() {
   return (
     <div className="m-auto justify-center items-center max-w-[1440px]">
       <Slider {...settings}>
-        <div className="max-w-screen-2xl  w-full m-auto relative group">
+        <div className="max-w-screen-2xl  w-full m-auto relative group ">
           <div
             style={{ backgroundImage: `url(${slides[0].url})` }}
             className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl pt-36 lg:pt-0 md:pt-32 lg:flex lg:h-screen lg:items-center"
@@ -151,36 +151,46 @@ function Hero() {
           >
             {/* hero section */}
 
+        <SwiperSlide>
+          <div className="max-w-screen-2xl  w-full m-auto relative group ">
             <div
-              style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-              className="w-full h-full absolute top-0 left-0 "
-            ></div>
-            <div class="mx-auto  text-center z-10 ">
-              <h1 className="mb-4 text-3xl  font-Montserrat font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
-                <span className=" bg-clip-text font-extrabold text-white  ">
-                  A New Era of
-                </span>{" "}
-                Fashion
-              </h1>
+              style={{ backgroundImage: `url(${slides[3].url})` }}
+              className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
+            >
+              {/* hero section */}
 
-              <p className="mt-4 font-inter px-1 text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
-                Be it for a video call, livestream or your social media feed:
-                Get designers piece to wear online.
-              </p>
-              <div className=" items-center block ">
-                <div className="mt-8 flex m-auto justify-center w-[183px] items-center gap-4">
-                  <a
-                    className="block w-full rounded bg-[#1E1E1E] px-8 py-4 text-sm font-medium text-white shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
-                    href="/"
-                  >
-                    Discover now
-                  </a>
+              <div
+                style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+                className="w-full h-full absolute top-0 left-0   "
+              ></div>
+              <div class="mx-auto   text-center z-10 ">
+                <h1 className="mb-4 text-3xl  font-Montserrat font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
+                  <span className=" bg-clip-text font-extrabold text-white  ">
+                    A New Era of
+                  </span>{" "}
+                  Fashion
+                </h1>
+
+                <p className="mt-4 font-inter text-[18px] font-normal lg:w-[637px] text-[#E9E9E9] text-center mx-auto ">
+                  Be it for a video call, livestream or your social media feed:
+                  Get designers piece to wear online.
+                </p>
+                <div className=" items-center block ">
+                  <div className="mt-8 flex m-auto justify-center items-center gap-4">
+                    <a
+                      className="block w-full rounded bg-[#1E1E1E] px-8 py-4 text-sm font-medium text-white shadow hover:bg-slate-400 font- focus:outline-none focus:ring active:bg-[#C5C5C5] sm:w-auto"
+                      href="/"
+                    >
+                      Discover now
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </Slider>
+      </div>
     </div>
   );
 }
