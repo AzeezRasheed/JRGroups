@@ -1,60 +1,55 @@
 .slick-slide > div {
-    margin: 0 10px;
-  }
-  .slick-list {
-    margin: 0 15px;
-  }
-  
-  .slick-prev:before{
-    content: "";
-    display: none;
-  }
+  margin: 0;
+}
+.slick-list {
+  margin: 0;
+}
 
-  .slick-next:before{
-    content: "";
-    display: none;
-  }
-  .card {
- 
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-    
-  }
+.slick-prev:before {
+  content: "";
+  display: none;
+}
 
-  .card-bottom {
-    margin: 10px 20px;
-  }
+.slick-next:before {
+  content: "";
+  display: none;
+}
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
 /* 
   .slick-prev {
    margin-left: -10px;
     
     } */
 
-    @media screen and ( width:425px) {
-      .slick-prev {
-        margin-left: 0px;
-         
-         }
-     
-      
-    }
 
-    @media screen and ( width:768px) {
-      .slick-prev {
-        margin-left: 0px;
-         
-         }
-    }
+@media screen and (width: 425px) {
+  .slick-next {
+    margin-right: 0;
+  }
+}
 
+@media screen and (width: 768px) {
+  .slick-next {
+    margin-right: 0;
+  }
+}
 
-    @media screen and ( width:1440px) {
-      .slick-prev {
-        margin-left: -10px;
-         
-         }
-    }
-    .slick-next {
-        margin-left: 40px;
-         
-         }
+/* @media screen and (width: 1024px) {
+  .slick-next {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (width: 1440px) {
+  .slick-next {
+    margin-right: 40px;
+  }
+} */
