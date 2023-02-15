@@ -6,6 +6,7 @@ import Global from "../../components/globalHome/Global";
 import Hero from "../../components/heroSection/Hero";
 import Navbar from "../../components/navbar/Navbar";
 import Partnership from "../../components/partnership/Partnership";
+import SecondCarousel from "../../components/secondHomeCarousel/SecondCarousel";
 import Subscribe from "../../components/subscribe-to-news-letter/Subscribe";
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <Hero />
       <Partnership />
       <Cdfw />
+      <SecondCarousel/>
       <Expo />
       <Subscribe />
       <Footer />

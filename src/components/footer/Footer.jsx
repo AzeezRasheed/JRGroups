@@ -170,8 +170,8 @@ function Footer() {
 
         <div className="sm:flex sm:items-center sm:justify-between       ">
           <div className="hidden lg:block"></div>
-          <span  className="mb-6 text-sm font-bold font-Montserrat text-gray-900 uppercase">
-            © 2023{" "}
+          <span className="mb-6 text-sm font-bold font-Montserrat text-gray-900 uppercase">
+            &copy;{new Date().getFullYear()} CDFW
             {/* <a href="https://flowbite.com/" className="hover:underline">
               Flowbite™
             </a>
