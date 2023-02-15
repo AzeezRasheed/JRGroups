@@ -53,11 +53,7 @@ function Hero() {
           <div className="max-w-screen-2xl  w-full m-auto relative group">
             <div
               style={{ backgroundImage: `url(${slides[0].url})` }}
-<<<<<<< HEAD
-              className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-[1440px] px-4 pt-16 md:pt-32 lg:pt-0 lg:flex lg:h-screen lg:items-center"
-=======
               className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl px-4 pt-36 lg:pt-0 md:pt-32 lg:flex lg:h-screen lg:items-center"
->>>>>>> ea2e4617c6b1d96d1492b751ea340abe66722fb5
             >
               {/* hero section */}
 
