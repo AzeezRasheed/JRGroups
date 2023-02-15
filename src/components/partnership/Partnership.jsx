@@ -7,7 +7,7 @@ import FirstLogo from "../../assets/image_3-removebg-preview.png";
 import SecondLogo from "../../assets/image_4-removebg-preview.png";
 import ThirdLogo from "../../assets/image_5-removebg-preview.png";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
-import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
+// import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 const PreviousBtn = (props) => {
   // console.log(props);
   const { className, onClick } = props;
@@ -38,6 +38,7 @@ function Partnership() {
     autoplay: true,
     autoplaySpeed: 8000,
     cssEase: "linear",
+    pauseOnHover: false,
     nextArrow: <NextBtn />,
     prevArrow: <PreviousBtn />,
     responsive: [
@@ -77,14 +78,14 @@ function Partnership() {
       </div>
       <div className="App px-20 m-auto items-center justify-center max-w-[1000px]  ">
         <Slider {...settings}>
-          <div className="card">
+          <div className="card px-4">
             <img
               src={SecondLogo}
               alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card">
+          <div className="card px-4">
             <img
               src={ThirdLogo}
               alt="image2"
@@ -92,28 +93,28 @@ function Partnership() {
             />
           </div>
 
-          <div className="card">
+          <div className="card px-4">
             <img
               src={FirstLogo}
               alt="image3"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card">
+          <div className="card px-4">
             <img
               src={SecondLogo}
               alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card">
+          <div className="card px-4">
             <img
               src={ThirdLogo}
               alt="image2"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card">
+          <div className="card px-4">
             <img
               src={FirstLogo}
               alt="image3"

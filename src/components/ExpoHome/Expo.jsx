@@ -36,6 +36,7 @@ function Expo() {
     autoplay: true,
     autoplaySpeed: 4000,
     cssEase: "linear",
+    pauseOnHover: false,
     nextArrow: <NextBtn />,
     prevArrow: <PreviousBtn />,
     responsive: [
@@ -92,7 +93,7 @@ function Expo() {
             {/* Right Side */}
             <div className=" pr-2 pl-2 lg:pl-0  lg:w-[70%]  ">
               <Slider {...settings}>
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo1}
@@ -111,7 +112,7 @@ function Expo() {
                   </div>
                 </div>
 
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo2}
@@ -129,7 +130,7 @@ function Expo() {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo3}
@@ -147,7 +148,7 @@ function Expo() {
                   </div>
                 </div>
 
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo1}
@@ -166,7 +167,7 @@ function Expo() {
                   </div>
                 </div>
 
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo2}
@@ -185,7 +186,7 @@ function Expo() {
                   </div>
                 </div>
 
-                <div>
+                <div className="pr-2 pl-2">
                   <div className="flex flex-col  gap-6  ">
                     <img
                       src={Expo3}
