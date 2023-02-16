@@ -73,3 +73,21 @@
 span {
   margin-left: 16px;
 }
+
+
+.slick-dots {
+  /* background-color: #fff; */
+  position: absolute;
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: black;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  opacity: 80;
+}

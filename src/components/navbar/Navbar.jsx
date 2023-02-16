@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import { SidebarData } from "./SidebarData";
 import { FiSearch } from "react-icons/fi";
+import { useScrollPosition } from "./ScrollHook";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -15,8 +16,15 @@ function Navbar() {
   // This is the code that I want to use to make the navbar responsive
   const showSidebar = () => setNavbar(!navbar);
 
+  // This is the code that I want to use to make the navbar responsive when the user scrolls down
+  const scrollPosition = useScrollPosition();
+
   return (
-    <header className=" relative top-0 z-30 w-full px-4 sm:px-4 py-2.5   bg-slate-100  shadow-xl">
+    <header
+      className={`  w-full px-4 sm:px-4 py-2.5   bg-white relative top-0 z-20 transition-all duration-200  ${
+        scrollPosition > 0 ? "shadow-lg  bg-slate-100 " : "shadow-none"
+      } `}
+    >
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full max-w-[1440px] ">
         <a
           href="/"

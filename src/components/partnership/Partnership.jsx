@@ -71,9 +71,9 @@ function Partnership() {
     ],
   };
   return (
-    <div className=" px-4 m-auto max-w-[1200px] mt-6 ">
+    <div className=" px-4 m-auto max-w-[1153px] mt-6 ">
       <div className="flex flex-row mx-4  ">
-        <div className="w-full md:w-1/2 lg:w-3/6     ">
+        <div className="w-full  md:w-1/2 lg:w-3/6     ">
           <hr className="h-[2px] my-8 bg-[#000000]" />
         </div>
         <div className=" lg:w-[350px] w-1/2 "></div>

@@ -54,7 +54,7 @@ function SecondCarousel() {
           {" "}
           <img src={slides[currentIndex].url} alt="" />
         </div>
-        <div className=" absolute top-[70%] left-[80%] right-[20%] items-center m-auto justify-center flex p-4 lg:absolute lg:top-[85%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-32 lg:mb-0 ">
+        <div className=" absolute top-[70%] left-[80%] right-[20%] md:right-[0] md:top-[85%] items-center m-auto justify-center flex p-4 md:p-0 lg:absolute lg:top-[85%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-1 lg:p-0 lg:mb-0 ">
           <div className="flex flex-row gap-2">
             <button
               className="cursor-pointer"
