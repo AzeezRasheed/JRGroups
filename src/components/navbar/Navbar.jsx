@@ -25,7 +25,7 @@ function Navbar() {
         scrollPosition > 0 ? "shadow-lg  bg-slate-100 " : "shadow-none"
       } `}
     >
-      <div className=" flex flex-wrap items-center justify-between mx-auto w-full max-w-[1440px] ">
+      <div className=" flex flex-wrap items-center justify-between mx-auto w-full max-w-screen-2xl ">
         <a
           href="/"
           className="flex lg:pl-32 md:pl-24 pl-10 pb-2 pt-2 items-center"

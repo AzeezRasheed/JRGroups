@@ -45,7 +45,7 @@ function Hero() {
   ];
 
   return (
-    <div className="max-w-screen-[1440px] w-full px-0 mx-0 ">
+    <div className=" w-full px-0 mx-0 ">
       <Slider {...settings}>
         <div className="   m-auto relative  ">
           <div
@@ -79,7 +79,7 @@ function Hero() {
         <div className=" w-full m-auto relative group">
           <div
             style={{ backgroundImage: `url(${slides[1].url})` }}
-            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
+            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto   lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
           >
             <div class="mx-auto  text-center z-10">
               <h1 className="mb-4 text-3xl  font-Montserrat capitalize font-extrabold text-slate-300 md:text-5xl lg:text-6xl">
@@ -110,7 +110,7 @@ function Hero() {
         <div className="  w-full m-auto relative group">
           <div
             style={{ backgroundImage: `url(${slides[2].url})` }}
-            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
+            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto   lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
           >
             {/* second hero  */}
 
@@ -143,7 +143,7 @@ function Hero() {
           <div className="max-w-screen-2xl  w-full m-auto relative group ">
             <div
               style={{ backgroundImage: `url(${slides[3].url})` }}
-              className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 flex lg:h-screen lg:items-center"
+              className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto   lg:pt-0 pt-36 md:pt-32 flex lg:h-screen lg:items-center"
             >
               {/* third hero  */}
 
