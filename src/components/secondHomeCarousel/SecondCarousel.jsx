@@ -49,8 +49,8 @@ function SecondCarousel() {
   }, [currentIndex, autoScroll, slideInterval, auto]);
   return (
     <section>
-      <div className="max-w-screen-2xl  w-full h-full m-auto mt-8 relative group bg-white">
-        <div className="w-full h-full">
+      <div className="max-w-screen-2xl  w-full h-full m-auto mt-8 relative group ">
+        <div className={`w-full h-full ${currentIndex === 0 && "bg-white"} `}>
           {" "}
           <img src={slides[currentIndex].url} alt="" />
         </div>
