@@ -140,7 +140,7 @@ function Hero() {
         </div>
 
         <div className="  w-full m-auto relative group">
-          <div className="max-w-screen-2xl  w-full m-auto relative group ">
+          <div className="  w-full m-auto relative group ">
             <div
               style={{ backgroundImage: `url(${slides[3].url})` }}
               className="  relative overflow-hidden  bg-no-repeat images object-contain bg-cover  mx-auto   lg:pt-0 pt-36 md:pt-32 flex lg:h-screen lg:items-center"
