@@ -12,12 +12,11 @@ import Subscribe from "../../components/subscribe-to-news-letter/Subscribe";
 function Home() {
   return (
     <div>
-      
       <Navbar />
       <Hero />
       <Partnership />
       <Cdfw />
-      <SecondCarousel/>
+      <SecondCarousel />
       <Expo />
       <Subscribe />
       <Footer />

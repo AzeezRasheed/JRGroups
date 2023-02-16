@@ -18,6 +18,7 @@ function Hero() {
   const settings = {
     dots: true,
     dotClass: "slick-dots slick-thumb ",
+    // asNavFor: '.slider',
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -44,15 +45,13 @@ function Hero() {
   ];
 
   return (
-    <div className="m-auto justify-center items-center max-w-[1440px]">
+    <div className="max-w-screen-[1440px] w-full px-0 mx-0 ">
       <Slider {...settings}>
-        <div className="max-w-screen-2xl  w-full m-auto relative group ">
+        <div className="   m-auto relative  ">
           <div
             style={{ backgroundImage: `url(${slides[0].url})` }}
-            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl pt-36 lg:pt-0 md:pt-32 lg:flex lg:h-screen lg:items-center"
+            className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto  pt-36 lg:pt-0 md:pt-32 lg:flex lg:h-screen lg:items-center"
           >
-            {/* first hero  */}
-
             <div class="mx-auto  text-center z-10">
               <h1 className="mb-4 text-3xl  font-Montserrat capitalize font-extrabold md:text-5xl lg:text-6xl">
                 <span className=" bg-clip-text font-extrabold text-white  ">
@@ -77,7 +76,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="max-w-screen-2xl  w-full m-auto relative group">
+        <div className=" w-full m-auto relative group">
           <div
             style={{ backgroundImage: `url(${slides[1].url})` }}
             className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
@@ -108,7 +107,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="max-w-screen-2xl  w-full m-auto relative group">
+        <div className="  w-full m-auto relative group">
           <div
             style={{ backgroundImage: `url(${slides[2].url})` }}
             className=" relative overflow-hidden bg-no-repeat images object-contain bg-cover  mx-auto max-w-screen-2xl  lg:pt-0 pt-36 md:pt-32 lg:flex lg:h-screen lg:items-center"
@@ -140,7 +139,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="max-w-screen-2xl  w-full m-auto relative group">
+        <div className="  w-full m-auto relative group">
           <div className="max-w-screen-2xl  w-full m-auto relative group ">
             <div
               style={{ backgroundImage: `url(${slides[3].url})` }}
