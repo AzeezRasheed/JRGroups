@@ -48,9 +48,9 @@ function Expo() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
