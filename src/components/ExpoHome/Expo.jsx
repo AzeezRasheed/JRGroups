@@ -31,7 +31,7 @@ function Expo() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -43,14 +43,14 @@ function Expo() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -98,13 +98,13 @@ function Expo() {
                     <img
                       src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full h-[367px] "
+                      className="w-full  "
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LONDON
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         See our showrooms and designers from the heart of
                         Europe.
                       </p>
@@ -117,13 +117,13 @@ function Expo() {
                     <img
                       src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full   h-[367px]"
+                      className="w-full   "
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LAGOS
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         See which designers showcased in Africa’s hub for
                         creativity.
                       </p>
@@ -135,13 +135,13 @@ function Expo() {
                     <img
                       src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full  h-[367px]"
+                      className="w-full  "
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LOS ANGELES
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         Fashion meets the digital world in sunny California.
                       </p>
                     </div>
@@ -153,13 +153,13 @@ function Expo() {
                     <img
                       src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full  h-[367px]"
+                      className="w-full  "
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LONDON
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         See our showrooms and designers from the heart of
                         Europe.
                       </p>
@@ -172,13 +172,13 @@ function Expo() {
                     <img
                       src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full  h-[367px]"
+                      className="w-full  "
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LAGOS
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         See which designers showcased in Africa’s hub for
                         creativity.
                       </p>
@@ -191,13 +191,13 @@ function Expo() {
                     <img
                       src={Expo3}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="  h-[367px] w-full"
+                      className="  w-full"
                     />
                     <div className="flex flex-col mt-4 gap-4">
-                      <h2 className="font-inter font-semibold text-start text-[24px] leading-[29px] text-[ #3F3F3F]   ">
+                      <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
                         CDFW IN LOS ANGELES
                       </h2>
-                      <p className="font-Montserrat font-normal  text-[11px] text-[#000000] ">
+                      <p className="font-Montserrat font-normal  text-[12px] text-[#000000] ">
                         Fashion meets the digital world in sunny California.
                       </p>
                     </div>
