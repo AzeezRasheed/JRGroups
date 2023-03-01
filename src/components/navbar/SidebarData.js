@@ -13,8 +13,8 @@ export const SidebarData = [
   },
 
   {
-    title: "About",
-    path: "/about",
+    title: "About Us",
+    path: "/about-us",
     icon: <FaInfoCircle />,
     cName: "nav-text",
   },

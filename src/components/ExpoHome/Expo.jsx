@@ -50,7 +50,7 @@ function Expo() {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -98,7 +98,7 @@ function Expo() {
                     <img
                       src={Expo1}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full "
+                      className="w-full  "
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
@@ -117,7 +117,7 @@ function Expo() {
                     <img
                       src={Expo2}
                       alt="CDFW LONDON FASHION WEEK FEBRUARY 2023"
-                      className="w-full  "
+                      className="w-full   "
                     />
                     <div className="flex flex-col mt-4 gap-4">
                       <h2 className="font-inter font-semibold text-start text-[20px] leading-[29px] text-[ #3F3F3F]   ">
