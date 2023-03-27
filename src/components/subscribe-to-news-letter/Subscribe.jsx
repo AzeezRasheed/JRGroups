@@ -7,10 +7,10 @@ function Subscribe() {
     <section className="flex flex-col lg:p-10 md:p-10 p-2  justify-center m-auto mt-8 max-w-[1055.94px] ">
       <div className=" items-center justify-center w-full  m-auto  ">
         <div className=" bg-[#EFF9FF]  h-full  w-full rounded relative z-50">
-          <div className=" absolute top-10 left-10  -z-10 ">
+          <div className=" absolute  top-10 left-10  -z-10 ">
             <img src={Line1} alt="Line 1" />
           </div>
-          <div className=" absolute top-2 left-36  -z-10 ">
+          <div className=" absolute top-28 md:top-2 left-2 md:left-16 lg:left-36  -z-10 ">
             <img src={Line2} alt="Line 1" />
           </div>
           <div className="flex flex-col gap-4 text-center items-center mx-auto p-8 ">

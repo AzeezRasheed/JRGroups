@@ -8,32 +8,26 @@ export const SidebarData = [
   {
     title: "Home",
     path: "/",
-    icon: <AiIcons.AiFillHome />,
+    // icon: <AiIcons.AiFillHome />,
     cName: "nav-text",
   },
 
   {
-    title: "About Us",
+    title: "About",
     path: "/about-us",
-    icon: <FaInfoCircle />,
+    // icon: <FaInfoCircle />,
     cName: "nav-text",
   },
   {
-    title: "Concept Store",
-    path: "/concept-store",
-    icon: <FaIcons.FaCartPlus />,
+    title: "CDFW",
+    path: "/cdfw",
+    // icon: <IoIcons.IoMdHelpCircle />,
     cName: "nav-text",
   },
-  //   {
-  //     title: "Messages",
-  //     path: "/messages",
-  //     icon: <FaIcons.FaEnvelopeOpenText />,
-  //     cName: "nav-text",
-  //   },
   {
-    title: "Contact Us",
-    path: "/contact-us",
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: "EXPO",
+    path: "/expo",
+    // icon: <IoIcons.IoMdHelpCircle />,
     cName: "nav-text",
   },
 ];
