@@ -6,6 +6,8 @@ import tw from "twin.macro";
 import { SCREENS } from "../../components/responsive/Screens";
 import TopImage from "../../assets/AboutUsTopImage.png";
 import TopBackgroundImage from "../../assets/TopRightImg.png";
+import ColorSplash from "../../assets/colot splash transition.png";
+
 import HaveAQuestion from "../../components/about-us-components/HaveAQuestion";
 
 const Container = styled.div`
@@ -39,8 +41,10 @@ const TopItems = styled.div`
 const FlexTop = styled.div`
   ${tw`
   flex
-  flex-wrap
-  justify-between
+  flex-col
+  justify-center
+  items-center
+  m-auto
   p-4
   lg:pt-16
   pt-8
@@ -69,21 +73,18 @@ const Heading = styled.h2`
   ${tw`
  font-Montserrat
  font-bold
- text-5xl
+ text-[40px]
  leading-[130%]
  capitalize
+ text-center
  tracking-[-0.01em]
  text-[#000000]
  w-full
- lg:w-[664px]
+max-w-[460px]
  z-10
- 
+ mb-10
   `}
-  @media (max-width: ${SCREENS.sm}) {
-    ${tw`
-    text-start
-    text-4xl
-  `}
+
 `;
 
 const Paragraph = styled.h2`
@@ -92,18 +93,15 @@ const Paragraph = styled.h2`
  font-normal
  text-[20px]
  leading-[24px]
-text-right
  text-[#000000]
  w-full
- lg:w-[510px]
- z-10
+ text-center
+ lg:w-[560px]
+ z-50
   `}
 
-  @media (width: ${SCREENS.sm}) {
-    ${tw`
-  text-center
-  `}
-  }
+
+ 
 `;
 
 const Image = styled.div`
@@ -130,6 +128,8 @@ const BottomItems = styled.div`
   m-auto
   w-full
   lg:mt-4
+  relative
+  z-50
   max-w-screen-2xl
   `}
 `;
@@ -138,7 +138,7 @@ const HeadingBottom = styled.h2`
   ${tw`
  font-Montserrat
  font-bold
- text-5xl
+ text-[40px]
  leading-[130%]
  capitalize
  tracking-[-0.01em]
@@ -161,8 +161,8 @@ const FlexBottom = styled.div`
   flex-col
   lg:flex-row
   justify-between
-  py-4
-  items-center
+  // py-4
+  // items-center
   gap-4
   `}
 `;
@@ -170,19 +170,22 @@ const FlexBottom = styled.div`
 const TestimonialFlexBottom = styled.div`
   ${tw`
   flex
-  flex-col-reverse
-  lg:flex-row
-  justify-between
+  flex-col
+  justify-center
+  items-center 
+  m-auto
   py-4
   items-center
   gap-4
+  mt-6
   `}
 `;
 
 const TestimonialImageAndName = styled.div`
   ${tw`
 flex
-flex-row
+flex-col
+gap-2
 items-center
 w-full
 h-full
@@ -208,35 +211,57 @@ pt-4
 
 `}
 `;
+
+const BottomRightWrapper = styled.div`
+  ${tw`
+w-full
+max-w-[510px]
+gap-6
+flex
+flex-col 
+pt-10
+pb-20
+  `}
+`;
+
+const RightTitle = styled.h2`
+  ${tw`
+font-inter font-medium text-[24px] text-right leading-[29px] text-[#000000]
+`}
+`;
+
+const RightDescription = styled.p`
+  ${tw`
+font-inter font-light text-right text-[20px] leading-[24px] text-[#000000]
+`}
+`;
+
 function AboutUs() {
   return (
     <Layouts>
       <section>
         <Container>
           <TopItems>
-            <div>
-              <div>
-                <div className="hidden lg:block lg:absolute lg:left-[45%] ">
-                  <img src={TopBackgroundImage} alt="color splash transition" />
+            <div >
+              <div >
+                <div className="absolute right-4 lg:top-32 z-10 ">
+                  <img src={ColorSplash} alt="color splash transition" />
                 </div>
-
+                <div className="absolute left-4 lg:top-[15rem] md:top-[10rem] top-[32rem] z-0 ">
+                  <img src={ColorSplash} alt="color splash transition" />
+                </div>
                 <FlexTop>
                   <div>
-                    <Heading>
-                      We create bridges between{" "}
-                      <span className="text-slate-400">
-                        Creative Design & Fashion week
-                      </span>
-                    </Heading>
+                    <Heading>Don’t be a Spectator Be part of it.</Heading>
                   </div>
-                  <RightItems>
-                    <div className="w-full h-full "></div>
-                    <Paragraph>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud
-                    </Paragraph>
-                  </RightItems>
+
+                  <Paragraph>
+                    Imagine being able to experience fashion from designers all
+                    over the world. Goodbye to watching models walking down
+                    runways. Hello to engaging with the collections,
+                    understanding the vision and using the pieces for both
+                    physical and virtual reality.
+                  </Paragraph>
                 </FlexTop>
               </div>
             </div>
@@ -246,44 +271,71 @@ function AboutUs() {
           </TopItems>
 
           <BottomItems>
-            <div className="w-full flex flex-col gap-4 px-4 md:px-20">
+            <div className="w-full flex flex-col gap-4 px-4 md:px-20 relative z-50 ">
               <hr className="w-full border border-solid border-[#3F3F3F]  h-0 " />
+              <div className=" absolute top-[26rem]  -z-10 ">
+                <img src={TopBackgroundImage} alt="color splash transition" />
+              </div>
+              <div className=" absolute top-[55rem] left-[470px] -z-10 ">
+                <img src={TopBackgroundImage} alt="color splash transition" />
+              </div>
               <FlexBottom>
                 <div className="flex flex-col gap-14 mb-10">
                   <HeadingBottom>
-                    We create bridges between Creative Design & Fashion week
+                    pushing the boundaries of traditional runway shows
                   </HeadingBottom>
-                  <div className="w-full h-full ">
-                    <img
-                      src={TopBackgroundImage}
-                      alt="color splash transition"
-                    />
-                  </div>
                 </div>
 
-                <div className="w-full max-w-[510px] gap-6 flex flex-col md:mt-24  ">
-                  <p className="font-inter font-medium text-[24px] leading-[29px] text-[#000000]  ">
-                    Our team is always getting bigger, but we all work towards
-                    one goal; to make sales success not only possible but
-                    inevitable for teams everywhere
-                  </p>
-                  <p className="font-inter font-light text-[20px] leading-[24px] text-[#000000]  ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud ut
-                    perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam, eaque
-                    ipsa quae ab illo inventore veritatis et quasi architecto
-                    beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione
-                    voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                    dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                    velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-                    ad minim
-                  </p>
+                <BottomRightWrapper>
+                  <RightTitle>
+                    At CDFW, we believe that luxury fashion is more than just
+                    clothing - it is a form of art to be experienced in a
+                    dynamic and immersive way.
+                  </RightTitle>
+                  <RightDescription>
+                    We do not create unrelatable runway shows. Instead, we
+                    provide each designer with a unique showroom space they can
+                    use to showcase their collection in a creative and
+                    interactive way.
+                  </RightDescription>
+                </BottomRightWrapper>
+              </FlexBottom>
+
+              <FlexBottom>
+                <div className="flex flex-col gap-14 mb-10">
+                  <HeadingBottom>
+                    Be Transported into the Designers World.
+                  </HeadingBottom>
                 </div>
+
+                <BottomRightWrapper>
+                  <RightTitle>
+                    The showrooms are supported by state-of-the-art virtual
+                    reality components such as projection mapping and immersive
+                    displays.
+                  </RightTitle>
+                  <RightDescription>
+                    Our goal is to create a more personalised and engaging
+                    experience for both visitors and designers. By moving away
+                    from the traditional runway show format, we give designers
+                    the freedom to showcase their collections in a way that is
+                    true to their vision.
+                  </RightDescription>
+                </BottomRightWrapper>
+              </FlexBottom>
+
+              <FlexBottom>
+                <div className="flex flex-col gap-14 mb-10">
+                  <HeadingBottom>Inspire, Challenge, Transform.</HeadingBottom>
+                </div>
+
+                <BottomRightWrapper>
+                  <RightDescription>
+                    Join us at CDFW and experience the future of fashion.
+                    Explore our showrooms, connect with designers, and discover
+                    the art of fashion in a whole new way.
+                  </RightDescription>
+                </BottomRightWrapper>
               </FlexBottom>
               <TestimonialFlexBottom>
                 <div>
@@ -295,26 +347,29 @@ function AboutUs() {
                         alt="CEO"
                       />
                       <TextTestimonial>
-                        <div className="pl-4 ">
-                          <p class="mb-1 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-                            Anna Smith
+                        <div className="pl-4 text-center ">
+                          <p class="mb-1 text-[24px] font-medium text-[#000000] ">
+                            Ruth Isabella Peters
                           </p>
-                          <p class="mb-0 font-semibold text-neutral-500 dark:text-neutral-400">
-                            Product manager
+                          <p class="mb-0 font-light leading-[24px] text-[20px] text-[#000000] ">
+                            Founder & CEO
                           </p>
                         </div>
                       </TextTestimonial>
                     </TestimonialImageAndName>
                   </div>
                 </div>
-                <div className="mb-4">
-                  <h2 className=" font-inter  font-light text-[20px] leading-[24px] text-[#000000] w-full max-w-[510px]  ">
-                    <span className="font-bold">“Our goal is to build</span> m
-                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut
-                  </h2>
+                <div className="mb-4 flex flex-col gap-2 w-full max-w-[774px] ">
+                  <p className=" font-inter font-light text-[24px] eading-[29px] text-center  ">
+                    Meet Ruth Isabella Peters
+                  </p>
+                  <p className=" font-inter font-light text-[24px] eading-[29px] text-center  ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in
+                  </p>
                 </div>
               </TestimonialFlexBottom>
             </div>

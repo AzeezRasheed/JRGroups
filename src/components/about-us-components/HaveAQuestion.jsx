@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import BottomAboutUs from "../../assets/BottomAboutUs.png"
+import BottomAboutUs from "../../assets/BottomAboutUs.png";
+import BottomContactImage from "../../assets/Rectangle 4349.png";
+import BottomRight1 from "../../assets/Rectangle 4347.png";
+import BottomRight2 from "../../assets/Rectangle 4348.png";
 
 const Container = styled.div`
   ${tw`
@@ -28,7 +31,8 @@ const InnerContainer = styled.div`
   w-full
   gap-8
   h-full
-  
+  relative
+  z-50
   `}
 `;
 
@@ -45,11 +49,9 @@ const Left = styled.div`
 const Right = styled.div`
   ${tw`
   w-full
-  max-w-[439px]
-  rounded-[20px]
-  bg-[#EFF9FF]
-  lg:h-[519px]
-  h-[350px]
+  max-w-[430px]
+  h-full
+  max-h-[508.36px]
 
   `}
 `;
@@ -123,10 +125,18 @@ const Button = styled.div`
 function HaveAQuestion() {
   return (
     <Container>
-         <div className="hidden lg:block lg:absolute lg:top-[450px] lg:left-[20px] ">
-                  <img src={BottomAboutUs} alt="color splash transition" />
-                </div>
-      <div className="items-center justify-center flex m-auto">
+      <div className="hidden lg:block lg:absolute lg:top-[450px] lg:left-[20px] ">
+        <img src={BottomAboutUs} alt="color splash transition" />
+      </div>
+      <div className="items-center justify-center flex m-auto relative">
+       
+
+        <div className="absolute right-0 lg:top-14 top-[25rem] w-full max-w-[367px] h-full max-h-[358px] ">
+          <img src={BottomRight2} alt="..." />
+        </div>
+        <div className="absolute right-0 bottom-0 w-full max-w-[367px] h-full max-h-[358px] ">
+          <img src={BottomRight1} alt="..." />
+        </div>
         <InnerContainer>
           <Left>
             <Title>Have a question? Our team is happy to assist you</Title>
@@ -142,7 +152,9 @@ function HaveAQuestion() {
               </p>
             </LeftFlexRow>
           </Left>
-          <Right></Right>
+          <Right>
+            <img src={BottomContactImage} alt="Have a question? " />
+          </Right>
         </InnerContainer>
       </div>
     </Container>

@@ -1,18 +1,30 @@
 import React from "react";
 import { ImPlay2 } from "react-icons/im";
+import Line1 from "../../assets/Line 2.png";
+import Line2 from "../../assets/Line 3.png";
 function Subscribe() {
   return (
     <section className="flex flex-col lg:p-10 md:p-10 p-2  justify-center m-auto mt-8 max-w-[1055.94px] ">
       <div className=" items-center justify-center w-full  m-auto  ">
-        <div className=" bg-[#EFF9FF]  h-full  w-full rounded ">
+        <div className=" bg-[#EFF9FF]  h-full  w-full rounded relative z-50">
+          <div className=" absolute top-10 left-10  -z-10 ">
+            <img src={Line1} alt="Line 1" />
+          </div>
+          <div className=" absolute top-2 left-36  -z-10 ">
+            <img src={Line2} alt="Line 1" />
+          </div>
           <div className="flex flex-col gap-4 text-center items-center mx-auto p-8 ">
             <h2 className=" text-[#000000]  font-extrabold font-Manrope text-[34px] leading-[45px]  ">
               #Stay in the loop
             </h2>
-            <p className=" text-[#3F3F3F] text-center font-Manrope leading-[30px] text-[16px] font-normal max-w-[592px] ">
-              Want to know where our next fashion week will be? Subscribe to our
-              updates and we’ll keep you up to date.
-            </p>
+            <div className="flex flex-col gap-[2px] text-center ">
+              <p className=" text-[#3F3F3F] text-center font-Manrope leading-[30px] text-[16px] font-normal max-w-[592px] ">
+                Want to know where our next fashion week will be?
+              </p>
+              <p className=" text-[#3F3F3F] text-center font-Manrope leading-[30px] text-[16px] font-normal max-w-[592px] ">
+                Subscribe to our updates and we’ll keep you up to date.
+              </p>
+            </div>
             <div className="bg-[#C9E7FA]  rounded-[5px] w-full max-w-[492px] h-[41px] "></div>
             <div className="flex flex-col lg:flex-row md:flex-row gap-6 pt-3">
               <div className="">
