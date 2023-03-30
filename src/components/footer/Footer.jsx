@@ -7,6 +7,27 @@ function Footer() {
     <footer className="p-10 bg-white sm:p-10 sm:pt-14 sm:pl-0 ">
       <div className="flex flex-col gap-6">
         <div className="flex  justify-between m-auto gap-8 lg:gap-20 lg:flex-row  flex-col   ">
+          <div className="lg:w-[380px] md:w-[380px] mb-8 ml-10 ">
+            <div className="flex flex-col gap-2 ">
+              <h2 className="text-sm font-bold ml-10 font-Montserrat text-gray-900 uppercase ">
+                Logo
+              </h2>
+              {/* <form>
+                <div className="flex items-center">
+                  <div className="flex lg:w-[378px] w-full  ">
+                    <input
+                      type="text"
+                      className="block w-full px-4 py-2  bg-slate-100 lg:text-[20px] font-Montserrat leading-[24px] font-normal text-[#000000] border rounded-md focus:outline-none focus:ring "
+                      placeholder="Enter your email address"
+                    />
+                    <button className="px-4 py-4 text-white bg-[#BCBCBC] border-l rounded-xl ">
+                      <img src={Icon} alt="submit" />
+                    </button>
+                  </div>
+                </div>
+              </form> */}
+            </div>
+          </div>
           <div>
             <div>
               <div className=" grid grid-cols-2 sm:grid-cols-3  gap-8 md:gap-20 lg:gap-36 ">
@@ -144,40 +165,18 @@ function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="lg:w-[380px] md:w-[380px] mb-8 ml-10 ">
-            <div className="flex flex-col gap-2 ">
-              <h2 className="text-sm font-bold ml-10 font-Montserrat text-gray-900 uppercase ">
-                KEEP IN TOUCH
-              </h2>
-              <form>
-                <div className="flex items-center">
-                  <div className="flex lg:w-[378px] w-full  ">
-                    <input
-                      type="text"
-                      className="block w-full px-4 py-2  bg-slate-100 lg:text-[20px] font-Montserrat leading-[24px] font-normal text-[#000000] border rounded-md focus:outline-none focus:ring "
-                      placeholder="Enter your email address"
-                    />
-                    <button className="px-4 py-4 text-white bg-[#BCBCBC] border-l rounded-xl ">
-                      <img src={Icon} alt="submit" />
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
 
-        <div className="sm:flex sm:items-center sm:justify-between       ">
-          <div className="hidden lg:block"></div>
-          <span className="mb-6 text-sm font-bold font-Montserrat text-gray-900 uppercase">
-            &copy;{new Date().getFullYear()} CDFW
+        <div className="flex text-start justify-start pl-4 md:pl-20 ">
+          {/* <div className="hidden lg:block"></div> */}
+          <span className="mb-6 text-[14px] leading-[24px] tracking-[0.2px] font-bold font-Montserrat text-gray-900 uppercase">
+            &copy;{new Date().getFullYear()}’s CDFW All Right Reserve
             {/* <a href="https://flowbite.com/" className="hover:underline">
               Flowbite™
             </a>
             . All Rights Reserved. */}
           </span>
-          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          {/* <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="/" className="text-gray-500 hover:text-gray-900 ">
               <BsFacebook />
               <span className="sr-only">Facebook page</span>
@@ -194,7 +193,7 @@ function Footer() {
               <BsYoutube />
               <span className="sr-only">Youtube account</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
