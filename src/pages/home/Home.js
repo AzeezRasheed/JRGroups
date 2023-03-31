@@ -16,7 +16,7 @@ function Home() {
       <Hero />
       <Partnership />
       <Cdfw />
-      <SecondCarousel />
+      {/* <SecondCarousel /> */}
       <Expo />
       <Subscribe />
       <Footer />

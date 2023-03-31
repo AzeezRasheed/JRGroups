@@ -1,14 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SecondCarousel1 from "../../assets/SecondCarousel1.png";
 import SecondCarousel2 from "../../assets/SecondCarousel2.png";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+import CDFWVR from "../videos/CDFW-VR.mp4";
+import { useSnapCarousel } from "react-snap-carousel";
+import ReactPlayer from "react-player";
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.css";
+// import "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
+
 function SecondCarousel() {
+  const ref = useRef(null);
+
+  const onPrevClick = () => {
+    ref.current.prev();
+  };
+  const onNextClick = () => {
+    ref.current.next();
+  };
+
   const slides = [
     {
-      url: SecondCarousel1,
+      id: 1,
+      src: SecondCarousel1,
     },
     {
-      url: SecondCarousel2,
+      id: 2,
+      src: SecondCarousel2,
     },
   ];
 
@@ -48,45 +66,82 @@ function SecondCarousel() {
     return () => clearInterval(slideInterval);
   }, [currentIndex, autoScroll, slideInterval, auto]);
   return (
-    <section>
-      <div className="max-w-screen-2xl  w-full h-full m-auto mt-8 relative group bg-white  items-center ">
-        <div className="w-full h-full bg-white m-auto flex items-center">
-          {" "}
-          <img src={slides[currentIndex].url} alt="" />
-        </div>
-        <div className=" absolute top-[70%] left-[80%] right-[20%] md:right-[0] md:top-[85%] items-center m-auto justify-center flex p-4 md:p-0 lg:absolute lg:top-[85%] lg:-translate-x-0 lg:translate-y-[-50%] lg:right-1 lg:p-0 lg:mb-0 ">
-          <div className="flex flex-row gap-2">
-            <button
-              className="cursor-pointer"
-              onClick={() => {
-                setCurrentIndex(0);
-              }}
-            >
-              <BsArrowLeftCircle
-                size={30}
-                className={`  ${
-                  currentIndex === 0 ? "text-black" : "text-white"
-                }`}
-              />
-            </button>
+    <div className="max-w-screen-2xl  w-full h-full m-auto  relative group justify-center items-center py-6">
+      <div className="lg:w-[600px] lg:h-[380px] w-full h-full    m-auto flex items-center ">
+        <Carousel
+          ref={ref}
+          // activeIndex={index}
+          // onSelect={handleSelect}
+          indicators={false}
+          controls={false}
+        >
+          <Carousel.Item>
+            <ReactPlayer
+              url={CDFWVR}
+              pip={true}
+              controls={true}
+              playing={true}
+              width="100%"
+              height="100%"
+            />
+          </Carousel.Item>
 
-            <button
-              className="cursor-pointer"
-              onClick={() => {
-                setCurrentIndex(1);
-              }}
-            >
-              <BsArrowRightCircle
-                size={30}
-                className={` ${
-                  currentIndex === 0 ? "text-black" : "text-white"
-                }`}
+          <Carousel.Item>
+            <div className="items-center flex w-full  h-full justify-center">
+              <img
+                src={SecondCarousel1}
+                alt="CDFW"
+                className="block w-full h-full  "
               />
-            </button>
-          </div>
-        </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="items-center flex w-full h-full  justify-center">
+              <img
+                src={SecondCarousel2}
+                alt="CDFW"
+                className="block w-full h-full  "
+              />
+            </div>
+          </Carousel.Item>
+        </Carousel>
       </div>
-    </section>
+      {/* <div className=" absolute top-[70%] left-[85%] right-[20%] md:right-[0] md:top-[70%]  items-center m-auto justify-center flex p-4 md:p-0   lg:-translate-x-0 lg:translate-y-[-50%] lg:right-1 lg:p-0 lg:mb-0 ">
+        <div className="flex flex-row gap-2">
+          <button
+            className="cursor-pointer"
+            onClick={() => {
+              setCurrentIndex(0);
+              onPrevClick();
+            }}
+          >
+            <BsArrowLeftCircle
+              size={30}
+              // className={`  ${
+              //   currentIndex === 1 ? "text-black" : "text-white"
+              // }`}
+            />
+          </button>
+
+          <button
+            className="cursor-pointer"
+            onClick={() => {
+              setCurrentIndex(1);
+              onNextClick();
+            }}
+          >
+            <BsArrowRightCircle
+              size={30}
+              // className={` ${
+              //   currentIndex === 1 ? "text-black" : "text-white"
+              // }`}
+            />
+          </button>
+        </div>
+              
+      </div> */}
+       
+    </div>
   );
 }
 
