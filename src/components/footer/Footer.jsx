@@ -1,33 +1,20 @@
 import React from "react";
 import Icon from "../../assets/Icon.png";
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import CDFWLOGO from "../../assets/cdfw logo B.png";
 
 function Footer() {
   return (
     <footer className="p-10 bg-white sm:p-10 sm:pt-14 sm:pl-0 ">
       <div className="flex flex-col gap-6">
-        <div className="flex  justify-between m-auto gap-8 lg:gap-20 lg:flex-row  flex-col   ">
-          <div className="lg:w-[380px] md:w-[380px] mb-8 ml-10 ">
-            <div className="flex flex-col gap-2 ">
-              <h2 className="text-sm font-bold ml-10 font-Montserrat text-gray-900 uppercase ">
-                Logo
-              </h2>
-              {/* <form>
-                <div className="flex items-center">
-                  <div className="flex lg:w-[378px] w-full  ">
-                    <input
-                      type="text"
-                      className="block w-full px-4 py-2  bg-slate-100 lg:text-[20px] font-Montserrat leading-[24px] font-normal text-[#000000] border rounded-md focus:outline-none focus:ring "
-                      placeholder="Enter your email address"
-                    />
-                    <button className="px-4 py-4 text-white bg-[#BCBCBC] border-l rounded-xl ">
-                      <img src={Icon} alt="submit" />
-                    </button>
-                  </div>
-                </div>
-              </form> */}
-            </div>
-          </div>
+        <div className="flex  items-center lg:items-start justify-center lg:justify-between m-auto gap-8 lg:gap-20 lg:flex-row  flex-col   ">
+          <a
+            href="/"
+            className="flex items-center w-[130px] md:w-[180px] h-full"
+          >
+            <img src={CDFWLOGO} className="w-full h-full" alt="JRGroups Logo" />
+          </a>
+
           <div>
             <div>
               <div className=" grid grid-cols-2 sm:grid-cols-3  gap-8 md:gap-20 lg:gap-36 ">
@@ -38,7 +25,7 @@ function Footer() {
                   <ul className="text-gray-600 ">
                     <li className="mb-4">
                       <a
-                        href="https://flowbite.com/"
+                        href="/about-us"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         About Us
@@ -46,7 +33,7 @@ function Footer() {
                     </li>
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         JRGroups
@@ -55,7 +42,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Our Partners
@@ -64,7 +51,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/editorials"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Editorials
@@ -73,7 +60,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         News
@@ -90,7 +77,7 @@ function Footer() {
                   <ul className="text-gray-600 ">
                     <li className="mb-4">
                       <a
-                        href="https://flowbite.com/"
+                        href="/expo"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Expo
@@ -98,7 +85,7 @@ function Footer() {
                     </li>
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Concept store
@@ -107,7 +94,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Patrons
@@ -116,7 +103,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         class="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         London Shown
@@ -125,7 +112,7 @@ function Footer() {
 
                     <li className="mb-4">
                       <a
-                        href="https://tailwindcss.com/"
+                        href="/"
                         className="hover:underline font-Montserrat font-semibold text-[14px] leading-[24px] tracking-[0.2px] "
                       >
                         Dubai fashion
@@ -167,33 +154,29 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex text-start justify-start pl-4 md:pl-20 ">
-          {/* <div className="hidden lg:block"></div> */}
-          <span className="mb-6 text-[14px] leading-[24px] tracking-[0.2px] font-bold font-Montserrat text-gray-900 uppercase">
+        <div className="flex text-center justify-between items-center pl-4 md:pl-20 ">
+          <div className="hidden lg:block"></div>
+          <span className=" text-[14px] leading-[24px] tracking-[0.2px] font-bold font-Montserrat text-gray-900 uppercase">
             &copy;{new Date().getFullYear()}’s CDFW All Right Reserve
-            {/* <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </a>
-            . All Rights Reserved. */}
           </span>
-          {/* <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="/" className="text-gray-500 hover:text-gray-900 ">
+          <div className="flex space-x-6 sm:justify-center mt-0">
+            <a href="/" className="text-gray-900 hover:text-gray-500  ">
               <BsFacebook />
               <span className="sr-only">Facebook page</span>
             </a>
-            <a href="/" className="text-gray-500 hover:text-gray-900 ">
+            <a href="/" className="text-gray-900 hover:text-gray-500 ">
               <BsInstagram />
               <span className="sr-only">Instagram page</span>
             </a>
-            <a href="/" className="text-gray-500 hover:text-gray-900 ">
+            <a href="/" className="text-gray-900 hover:text-gray-500 ">
               <BsTwitter />
               <span className="sr-only">Twitter page</span>
             </a>
-            <a href="/" className="text-gray-500 hover:text-gray-900 ">
+            <a href="/" className="text-gray-900 hover:text-gray-500  ">
               <BsYoutube />
               <span className="sr-only">Youtube account</span>
             </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>

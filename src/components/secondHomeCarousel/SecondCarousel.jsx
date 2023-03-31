@@ -19,59 +19,12 @@ function SecondCarousel() {
     ref.current.next();
   };
 
-  const slides = [
-    {
-      id: 1,
-      src: SecondCarousel1,
-    },
-    {
-      id: 2,
-      src: SecondCarousel2,
-    },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
-
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
-
-  function auto() {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-
-  useEffect(() => {
-    setCurrentIndex(0);
-  }, []);
-
-  useEffect(() => {
-    if (autoScroll) {
-      auto();
-    }
-    return () => clearInterval(slideInterval);
-  }, [currentIndex, autoScroll, slideInterval, auto]);
   return (
     <div className="max-w-screen-2xl  w-full h-full m-auto  relative group justify-center items-center py-6">
-      <div className="lg:w-[600px] lg:h-[380px] w-full h-full    m-auto flex items-center ">
+      <div className="lg:w-[800px] lg:h-[400px]  w-full h-full     m-auto flex items-center ">
         <Carousel
           ref={ref}
-          // activeIndex={index}
-          // onSelect={handleSelect}
+          interval={23000}
           indicators={false}
           controls={false}
         >
@@ -80,66 +33,50 @@ function SecondCarousel() {
               url={CDFWVR}
               pip={true}
               controls={true}
-              playing={true}
+              // playing={true}
               width="100%"
               height="100%"
             />
           </Carousel.Item>
 
           <Carousel.Item>
-            <div className="items-center flex w-full  h-full justify-center">
-              <img
-                src={SecondCarousel1}
-                alt="CDFW"
-                className="block w-full h-full  "
-              />
-            </div>
+            <img
+              src={SecondCarousel1}
+              alt="CDFW"
+              className="block w-full h-full  "
+            />
           </Carousel.Item>
           <Carousel.Item>
-            <div className="items-center flex w-full h-full  justify-center">
-              <img
-                src={SecondCarousel2}
-                alt="CDFW"
-                className="block w-full h-full  "
-              />
-            </div>
+            <img
+              src={SecondCarousel2}
+              alt="CDFW"
+              className="block w-full h-full  "
+            />
           </Carousel.Item>
         </Carousel>
       </div>
-      {/* <div className=" absolute top-[70%] left-[85%] right-[20%] md:right-[0] md:top-[70%]  items-center m-auto justify-center flex p-4 md:p-0   lg:-translate-x-0 lg:translate-y-[-50%] lg:right-1 lg:p-0 lg:mb-0 ">
+      <div className="hidden lg:block absolute top-[85%] left-[85%] md:p-0 -translate-x-0 translate-y-[-50%] right-1 lg:p-0 mb-0 ">
         <div className="flex flex-row gap-2">
           <button
             className="cursor-pointer"
             onClick={() => {
-              setCurrentIndex(0);
               onPrevClick();
             }}
           >
-            <BsArrowLeftCircle
-              size={30}
-              // className={`  ${
-              //   currentIndex === 1 ? "text-black" : "text-white"
-              // }`}
-            />
+            <BsArrowLeftCircle size={30} />
           </button>
 
           <button
             className="cursor-pointer"
             onClick={() => {
-              setCurrentIndex(1);
               onNextClick();
             }}
           >
-            <BsArrowRightCircle
-              size={30}
-              // className={` ${
-              //   currentIndex === 1 ? "text-black" : "text-white"
-              // }`}
-            />
+            <BsArrowRightCircle size={30} />
           </button>
         </div>
               
-      </div> */}
+      </div>
        
     </div>
   );

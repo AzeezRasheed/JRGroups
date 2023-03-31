@@ -10,7 +10,7 @@ function Cdfw() {
 
   //Then we have a cdfw component that returns the data for all we need to display on the page and then we call the typedText variable in the return statement
   return (
-    <div className="mt-10 p-4 mb-10 m-auto">
+    <div className="mt-10 p-4  m-auto">
       <div className="h-[60px]  lg:h-[48px] md:h-[48px] ">
         {" "}
         <h2 className=" blinking-cursor text-center m-auto max-w-[637px] font-inter leading-[24px] text-[20px] font-normal   md:pl-2 md:pr-2 lg:pl-2 lg:pr-2 pt-3 pb-3 ">
@@ -18,7 +18,7 @@ function Cdfw() {
         </h2>
       </div>
 
-      <div className="mx-auto items-center justify-center max-w-[1153px] flex">
+      <div className="mx-auto items-center mb-6 justify-center max-w-[1153px] flex">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3 pl-6 pr-6 lg:pl-10 lg:pr-10 mt-24 ">
           {data.map((item, index) => (
             <div className=" flex flex-col gap-6 justify-between">

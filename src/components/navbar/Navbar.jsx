@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../../assets/CDFW.png";
 import { BiChevronDown } from "react-icons/bi";
 import styled from "styled-components";
 import data from "./data/sidebar";
@@ -8,7 +7,7 @@ import "./navbar.css";
 import { SidebarData } from "./SidebarData";
 import { FiSearch } from "react-icons/fi";
 import { useScrollPosition } from "./ScrollHook";
-
+import CDFWLOGO from "../../assets/cdfw logo B.png"
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(false);
@@ -28,12 +27,10 @@ function Navbar() {
       <div className=" flex flex-wrap items-center justify-between mx-auto w-full max-w-screen-2xl ">
         <a
           href="/"
-          className="flex lg:pl-32 md:pl-24 pl-10 pb-2 pt-2 items-center"
+          className="flex lg:pl-32 md:pl-24 pl-10 pb-2 pt-2 items-center  h-full"
         >
-          <img src={Logo} className="  " alt="JRGroups Logo" />
+          <img src={CDFWLOGO} className="w-[130px] " alt="JRGroups Logo" />
         </a>
-
-        {/* inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 */}
 
         <button
           className="flex-none px-2 inline-flex  lg:hidden z-10"
@@ -159,7 +156,10 @@ function Navbar() {
           <ul className="nav-menu-items">
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
-                <img src={Logo} className="  " alt="JRGroups Logo" />
+                <div  className="flex py-6 items-center w-[130px] lg:w-[230px] h-full">
+                <img src={CDFWLOGO} className="w-full h-full" alt="JRGroups Logo" />
+
+                </div>
               </Link>
             </li>
 

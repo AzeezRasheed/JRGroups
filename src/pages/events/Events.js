@@ -60,6 +60,43 @@ z-50
 `}
 `;
 
+const Button = styled.button`
+  ${tw`
+flex
+flex-col
+gap-6
+justify-between
+rounded-xl
+relative
+border 
+border-solid
+border-[#E9E9E9]
+`}
+  &:hover {
+    box-shadow: 5px 14px 30px rgba(6, 16, 52, 0.15);
+  }
+`;
+
+const SCROLLLINK = styled.li`
+  ${tw`
+flex
+flex-col
+gap-6
+justify-between
+rounded-xl
+bg-white
+relative
+cursor-pointer 
+w-full
+`}
+  flex-shrink: 0,
+align-items: center,
+
+&:hover {
+    box-shadow: 5px 14px 30px rgba(6, 16, 52, 0.15);
+  }
+`;
+
 function Events() {
   const slides = [
     {
@@ -220,7 +257,7 @@ function Events() {
                             </Menu.Item>
                             <Menu.Item>
                               {({ active }) => (
-                                <button 
+                                <button
                                   onClick={() => setEventLocation("lagos")}
                                   className={
                                     active
@@ -386,11 +423,7 @@ function Events() {
         </div>
         <EventsWrapper>
           {EventsData.map((item, index) => (
-            <div
-              key={index}
-              style={{ boxShadow: "5px 14px 30px rgba(6, 16, 52, 0.15)" }}
-              className=" flex flex-col gap-6 justify-between rounded-xl relative"
-            >
+            <Button key={index}>
               <div className="w-[167px] absolute  left-[1.5rem] top-[13rem] ">
                 <div className="text-center items-center">
                   <a
@@ -421,7 +454,7 @@ function Events() {
                   </p>
                 </div>
               </div>
-            </div>
+            </Button>
           ))}
         </EventsWrapper>
       </EventsContainer>
@@ -439,24 +472,14 @@ function Events() {
             ref={scrollRef}
             style={{
               display: "flex",
-              gap: "30px",
               overflow: "hidden",
               scrollSnapType: "x mandatory",
             }}
+            className="flex gap-[50px] items-center w-full   "
           >
             {ExploreData.map((item, index) => (
-              <li
-                key={index}
-                style={{
-                  boxShadow: "5px 14px 30px rgba(6, 16, 52, 0.15)",
-                  flexShrink: 0,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                className=" flex flex-col gap-6 justify-between rounded-xl bg-white   relative"
-              >
-                <div className="w-[167px] absolute left-[1.5rem]  top-[13rem] ">
+              <SCROLLLINK key={index} onClick={() => {}}>
+                <div className="w-[167px] absolute left-[1.5rem]  top-[12.5rem] ">
                   <div className="text-center items-center">
                     <a
                       className="block w-full rounded bg-[#3F3F3F] text-white  py-3 px-2 text-sm font-medium  shadow hover:bg-slate-400 focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
@@ -466,7 +489,7 @@ function Events() {
                     </a>
                   </div>
                 </div>
-                <img src={item.image} alt={item.alt} className="w-full mb-2 " />
+                <img src={item.image} alt={item.alt} className="w-full mb-6 " />
                 <div className="flex flex-col  gap-6  px-6 mb-16  ">
                   <div className="flex flex-col gap-4">
                     <h2 className="font-Montserrat w-[200px]  font-semibold text-start text-[25px] leading-[134%] text-[#000000]   ">
@@ -478,35 +501,37 @@ function Events() {
                     </p>
                   </div>
                 </div>
-              </li>
+              </SCROLLLINK>
             ))}
           </ul>
-          <div className="text-center items-center">
-            <button
-              onClick={() => prev()}
-              className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black  py-4 px-4 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
-            >
-              <BsArrowLeftShort size={25} />
-            </button>
-          </div>
-          {/* <div>
+          <div className="flex flex-row justify-between gap-4 w-full">
+            <div className="text-center items-center">
+              <button
+                onClick={() => prev()}
+                className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black  py-4 px-4 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
+              >
+                <BsArrowLeftShort size={25} />
+              </button>
+            </div>
+            {/* <div>
             {activePageIndex + 1} / {pages.length}
           </div> */}
-          <div className="text-center items-center">
-            <a
-              className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black py-4 px-6 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
-              href="/"
-            >
-              View Details
-            </a>
-          </div>
-          <div className="text-center items-center">
-            <button
-              onClick={() => next()}
-              className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black  py-4 px-4 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
-            >
-              <BsArrowRightShort size={25} />
-            </button>
+            <div className="text-center items-center">
+              <a
+                className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black py-4 px-6 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
+                href="/"
+              >
+                View Details
+              </a>
+            </div>
+            <div className="text-center items-center">
+              <button
+                onClick={() => next()}
+                className="block w-full rounded  border-solid border-[1px] border-[#C8C8C8] text-white hover:text-black  py-4 px-4 text-sm font-medium  shadow hover:bg-slate-400 hover:border-none focus:outline-none  active:bg-[#C5C5C5] sm:w-auto"
+              >
+                <BsArrowRightShort size={25} />
+              </button>
+            </div>
           </div>
         </ExploreWrapper>
       </ExploreContainer>
