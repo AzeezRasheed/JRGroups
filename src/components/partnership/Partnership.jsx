@@ -83,14 +83,14 @@ function Partnership() {
       </div>
       <div className="App px-20 m-auto items-center justify-center max-w-[1000px]  ">
         <Slider {...settings}>
-          <div className="card px-4">
+          <div className="card px-4  border-none">
             <img
               src={SecondLogo}
               alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card px-4">
+          <div className="card px-4 border-none">
             <img
               src={ThirdLogo}
               alt="image2"
@@ -98,28 +98,28 @@ function Partnership() {
             />
           </div>
 
-          <div className="card px-4">
+          <div className="card px-4 border-none">
             <img
               src={FirstLogo}
               alt="image3"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card px-4">
+          <div className="card px-4 border-none">
             <img
               src={SecondLogo}
               alt="image1"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card px-4">
+          <div className="card px-4 border-none">
             <img
               src={ThirdLogo}
               alt="image2"
               className=" cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg "
             />
           </div>
-          <div className="card px-4">
+          <div className="card px-4 border-none">
             <img
               src={FirstLogo}
               alt="image3"

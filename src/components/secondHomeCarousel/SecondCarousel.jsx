@@ -2,12 +2,15 @@ import React, { useState, useEffect, useRef } from "react";
 import SecondCarousel1 from "../../assets/SecondCarousel1.png";
 import SecondCarousel2 from "../../assets/SecondCarousel2.png";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import CDFWVR from "../videos/CDFW-VR.mp4";
+// import CDFWVR from "../videos/CDFW-VR.mp4";
+import CDFWGIF from "../videos/CDFW-GIF.gif";
 import { useSnapCarousel } from "react-snap-carousel";
 import ReactPlayer from "react-player";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.css";
-// import "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function SecondCarousel() {
   const ref = useRef(null);
@@ -19,43 +22,35 @@ function SecondCarousel() {
     ref.current.next();
   };
 
+  //The settings for the carousel
+  const settings = {
+    dots: true,
+    dotClass: "slick-dots slick-thumb ",
+    // asNavFor: '.slider',
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 19000,
+    cssEase: "linear",
+    pauseOnHover: false,
+  };
+
   return (
     <div className="max-w-screen-2xl  w-full h-full m-auto  relative group justify-center items-center py-6">
-      <div className="lg:w-[800px] lg:h-[400px]  w-full h-full     m-auto flex items-center ">
-        <Carousel
-          ref={ref}
-          interval={23000}
-          indicators={false}
-          controls={false}
-        >
-          <Carousel.Item>
-            <ReactPlayer
-              url={CDFWVR}
-              pip={true}
-              controls={true}
-              // playing={true}
-              width="100%"
-              height="100%"
-            />
-          </Carousel.Item>
+      <Slider {...settings}>
+        <div className=" relative overflow-hidden bg-no-repeat  object-contain bg-cover  mx-auto  h-full w-full md:h-screen ">
+          <img src={CDFWGIF} alt="cdfw gif" className="w-full h-full" />
+        </div>
+        <div className=" relative overflow-hidden bg-no-repeat  object-contain bg-cover  mx-auto  h-full w-full md:h-screen ">
+          <img src={SecondCarousel1} alt="cdfw gif" className="w-full h-full" />
+        </div>
+        <div className=" relative overflow-hidden bg-no-repeat  object-contain bg-cover  mx-auto  h-full w-full md:h-screen ">
+          <img src={SecondCarousel2} alt="cdfw gif" className="w-full h-full" />
+        </div>
+      </Slider>
 
-          <Carousel.Item>
-            <img
-              src={SecondCarousel1}
-              alt="CDFW"
-              className="block w-full h-full  "
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              src={SecondCarousel2}
-              alt="CDFW"
-              className="block w-full h-full  "
-            />
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="hidden lg:block absolute top-[85%] left-[85%] md:p-0 -translate-x-0 translate-y-[-50%] right-1 lg:p-0 mb-0 ">
+      {/* <div className="hidden lg:block absolute top-[85%] left-[85%] md:p-0 -translate-x-0 translate-y-[-50%] right-1 lg:p-0 mb-0 ">
         <div className="flex flex-row gap-2">
           <button
             className="cursor-pointer"
@@ -77,7 +72,7 @@ function SecondCarousel() {
         </div>
               
       </div>
-       
+        */}
     </div>
   );
 }
